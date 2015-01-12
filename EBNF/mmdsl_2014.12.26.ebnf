@@ -1,0 +1,292 @@
+/* MM-DSL Grammar Definition
+ * Version 1.03 (in development)
+ * Date: 26.12.2014
+ */
+
+root ::= methodname (includelibrarytype | embedplatformtype | embedcodetype )* includelibrary* embedcode* method
+
+methodname ::= 'method' name
+
+includelibrary ::= 'include' '<' name (':' name-includelybrarytype)? '>'
+
+includelibrarytype ::= 'def' 'IncludeLibraryType' name
+
+embedcode ::= 'embed' name '<' name-embedplatformtype (':' name-embedcodetype)? '>' '{' embeddedcodegoeshere '}'
+
+embedplatformtype ::= 'def' 'EmbedPlatformType' name
+
+embedcodetype ::= 'def' 'EmbedCodeType' name
+
+insertembedcode ::= 'insert' name-embedcode
+
+method ::= enumeration* symbolstyle* symbolclass* symbolrelation* metamodel algorithm* event*
+
+enumeration ::= 'enum' name '{' enumvalues+ '}'
+
+metamodel ::= class+ relation* attribute* modeltype+
+
+class ::= 'class' name ('extends' name-class)? ('symbol' name-symbolclass)? '{' (classattribute | attribute | reference | insertembedcode)* '}'
+
+relation ::= 'relation' name ('extends' name-relation)? ('symbol' name-symbolrelation)? 'from' name-class 'to' name-class '{' (attribute | insertembedcode)* '}'
+
+attribute ::= 'attribute' name ':' type ('acccess' ':' acesstype)?
+
+accesstype ::= 'write' | 'read' | 'internal'
+
+reference ::= 'reference' name '->' name-modeltype ( 'class' name-class)?
+
+classattribute ::= 'classattribute' name ':' type
+
+type ::= simpletype | enumtype
+
+simpletype ::= 'string' | 'int' | 'double'
+
+enumtype ::= 'enum' name-enumeration
+
+modeltype ::= 'modeltype' name '{' 'classes' name-class+ 'relations' ('none' | name-relation+) 'modes' ('none' | name-mode+) '}'
+
+mode ::= 'mode' name 'include' 'classes' name-class+ 'relations' ('none' | name-relation+)
+
+symbolclass ::= 'classgraph' name ('style' name-symbolstyle)? '{' (svgcommand | insertembedcode)* '}'
+
+symbolrelation ::= 'relationgraph' name ('style' name-symbolstyle)? '{' 'from' (svgcommand | insertembedcode)* 'middle' (svgcommand | insertembedcode)* 'to' (svgcommand | insertembedcode)* '}'
+
+svgcommand ::= (rectangle | circle | ellipse | line | polyline | polygon | path | text) symbolstyle
+
+rectangle ::= 'rectangle' 'x' '=' REALNUMBER 'y' '=' REALNUMBER 'w' '=' NUMBER 'h' '=' NUMBER
+
+circle ::= 'circle' 'cx' '=' REALNUMBER 'cy' '=' REALNUMBER 'r' '=' NUMBER
+
+ellipse ::= 'ellipse' 'cx' '=' REALNUMBER 'cy' '=' REALNUMBER 'rx' '=' REALNUMBER 'ry' '=' REALNUMBER
+
+line ::= 'line' 'x1' '=' REALNUMBER 'y1' '=' REALNUMBER 'x2' '=' REALNUMBER 'y2' '=' REALNUMBER
+
+polyline ::= 'polyline' 'points' '=' points+
+
+polygon ::= 'polygon' 'points' '=' points+
+
+path ::= 'path' 'd' '=' pathdata+
+
+text ::= 'text' value 'x' '=' REALNUMBER 'y' '=' REALNUMBER ('font-family' '=' fontfamily)? ('font-size' '=' fontsize)? ('fill' '=' fillcolor)?
+
+pathdata ::= moveto | lineto | horizontallineto | verticallineto | curveto | smoothcurveto | quadraticbeziercurveto | smoothquadraticbetiercurveto | ellipticalarc | closepath
+
+moveto ::= ('M' | 'm') pathparametersMLT+
+
+lineto ::= ('L' | 'l') pathparametersMLT+
+
+horizontallineto ::= ('H' | 'h') pathparametersHV+
+
+verticallineto ::= ('V'| 'v') pathparametersHV+
+
+curveto ::= ('C' | 'c') PathParametersC+
+
+smoothcurveto ::= ('S' | 's') pathparametersS+
+
+quadraticbeziercurveto ::= ('Q' | 'q') pathparametersQ+
+
+smoothquadraticbeziercurveto ::= ('T' | 't') pathparametersMLT+
+
+ellipticalarc ::= ('A' | 'a') pathparametersA+
+
+closepath ::= ('Z' | 'z')
+
+points ::= x ',' y
+
+pathparametersHV ::= x
+
+pathparametersMLT ::= x ',' y
+
+pathparametersS ::= x2 y2 x y
+
+pathparametersQ ::= x1 y1 x y
+
+pathparametersC ::= x1 y1 x2 y2 x y
+
+pathparametersA ::= rx ',' ry xaxisrot largearcflag sweepflag x y
+
+symbolstyle ::= 'style' name '{' 'fill' ':' ('none' | fillcolor) 'stroke' ':' strokecolor 'stroke-width' ':' strokewidth ('font-family' ':' fontfamily)? ('font-size' ':' fontsize)? '}'
+
+fillcolor ::=  color | HEXCOLOR
+
+color ::= standardHTMLcolors
+
+fontfamily ::= STRING | font
+
+font ::= standardWindowsFonts
+
+fontsize ::= NUMBER
+
+algorithm ::= 'algorithm' name '{' statement* '}'
+
+statement ::= selectionstatement | loopstatement | variable | algorithmoperation | insertembedcode
+
+selectionstatement ::= ('if' '(' expression ')' '{' statement* '}') (('elseif' '(' expression ')' '{' statement* '}')* 'else' '{' statement* '}')?
+
+loopstatement ::= whileloop | forloop
+
+whileloop ::= 'while' '(' expression ')' '{' (statement | ('break' | 'continue'))* '}'
+
+forloop ::= 'for' '(' start ';' stop ';' interval ')' '{' (statement | ('break' | 'continue'))* '}'
+
+variable ::= ('var' name (operatorassign varstatement)?) | (name-variable operatorassign varstatement)
+
+varstatement ::= expression | algorithmoperation | ('class' name-class) | ('attribute' name-attribute) | ('reference' name-reference) | ('symbolclass' name-symbolclass) | ('symbolrelation' name-symbolrelation) | ('symbolstyle' name-symbolstyle) | ('embedded' name-embedcode) | ('modeltype' name-modeltype)
+
+operatorassign ::= '=' | '+=' | '-=' | '*=' | '/='
+
+operatorunary ::= '!'
+
+operatormultiply ::= '*' | '/' | '%'
+
+operatoradd ::= '+' | '-'
+
+operatorcompare ::= '>=' | '<=' | '>' | '<'
+
+operatorequal ::= '==' | '!=' 
+
+operatorand ::= '&&'
+
+operatoror ::= '||'
+
+expression ::= orexpression
+
+orexpression ::= andexpression (operatoror andexpression)*
+
+andexpression ::= equalexpression (operatorand equalexpression)*
+
+equalexpression ::= compareexpression (operatorequal compareexpression)*
+
+compareexpression ::= additionexpression (operatorcompare additionexpression)*
+
+additionexpression ::= multiplicationexpression (operatoradd multiplicationexpression)*
+
+multiplicationexpression ::= unaryexpression (operatormultiply unaryexpression)*
+
+unaryexpression ::= operatorunary? primaryexpression
+
+primaryexpression ::= atomicexpression | ( '(' orexpression ')' )
+
+atomicexpression ::= 'true' | 'false' | name-variable | STRING | RealNumber
+
+algorithmoperation ::= fileoperation | diroperation | simpleui | modeloperation | instanceoperation | attributeoperation
+
+fileoperation ::= 'file' '.' (filecopy | filedelete | filecreate | fileread | filewrite)
+
+filecopy ::= 'copy' 'source' src 'destination' dest
+
+filedelete ::= 'delete' filename
+
+filecreate ::= 'create' filename
+
+fileread ::= 'read' filename
+
+filewrite ::= 'write' filename 'text' text ('append')?
+
+diroperation ::= 'dir' '.' (dirsetworking | dircreate | dirdelete | dircreate | dirlist)
+
+dirsetworking ::= 'set' dirname
+
+dircreate ::= 'create' dirname
+
+dirdelete ::= 'delete' dirname
+
+dirlist ::= 'list' dirname
+
+simpleui ::= 'ui' '.' (editbox | infobox | errorbox | warningbox | viewbox | itemoperation)
+
+editbox ::= 'editbox' 'title' title 'text' text ('button' okbuttontext)?
+
+infobox ::= 'infobox' 'title' title 'text' text
+
+errorbox ::= 'errorbox' 'title' title 'text' text 'button' buttontype
+
+warningbox ::= 'warningbox' 'title' title 'text' text 'button' buttontype
+
+buttontype ::= 'ok' | 'ok-cancel' | 'yes-no' | 'yes-no-cancel' | 'retry-cancel' | 'def-ok' | 'def-cancel' | 'def-yes' | 'def-no' | 'def-retry'
+
+viewbox ::= 'viewbox' 'title' title 'text' text
+
+itemoperation ::= 'item' '.' (menuitem | contextitem)
+
+menuitem ::= 'menu' '.' (insertmenuitem | removemenuitem)
+
+insertmenuitem ::= 'insert' name 'to' menu
+
+removemenuitem ::= 'remove' name-menuitem
+
+contextitem ::= 'context' '.' (insertcontextitem | removecontextitem)
+
+insertcontextitem ::= 'insert' name 'to' context
+
+removecontextitem ::= 'remove' name-contextitem
+
+modeloperation ::= 'model' '.' (modelcreate | modeldelete | modeldiscard | modelsave | modelload | modelisloaded)
+
+modelcreate ::= 'create' name name-modeltype
+
+modeldelete ::= 'delete' name-model
+
+modeldiscard ::= 'discard' name-model
+
+modelsave ::= 'save' name-model
+
+modelload ::= 'load' name-model
+
+modelisloaded ::= 'isloaded' name-model
+
+instanceoperation ::= 'instance' '.' (classinstance | relationinstance)
+
+classinstance ::= 'class' '.' (classinstancecreate | classinstancedelete | classinstanceget | classinstanceset | classinstancegetall)
+
+classinstancecreate ::= 'create' name name-class
+
+classinstancedelete ::= 'delete' name-classinstance
+
+classinstanceget ::= 'get' name-classinstance
+
+classinstanceset ::= 'set' name-classinstance
+
+classinstancegetall ::= 'getall' name-class
+
+relationinstance ::= 'relation' '.' (relationinstancecreate | relationinstancedelete | relationinstanceget | relationinstanceset | relationinstancegetall)
+
+relationinstancecreate ::= 'create' name name-relation 'from' name-classinstancefrom 'to' name-classinstanceto
+
+relationinstancedelete ::= 'delete' name-relationinstance
+
+relationinstanceget ::= 'get' name-relationinstance
+
+relationinstanceset ::= 'set' name-relationinstance
+
+relationinstancegetall ::= 'getall' name-relation
+
+attributeoperation ::= name-attribute '.' (attributeget | attributeset)
+
+attributeget ::= 'get' '.' attributegetparams
+
+attributegetparams ::= ('type' | 'value' | 'name')
+
+attributeset ::= 'set' '.' attributesetparams (STRING | REALNUMBER | name-variable)
+
+attributesetparams ::= 'value'
+
+event ::= 'event' eventname '.' 'execute' '.' name-algorithm
+
+eventname ::= 'BeforeCreateModel' | 'BeforeCreateRelationInstance' | 'BeforeDeleteInstance' | 'BeforeDeleteModel' | 'BeforeDiscardModel' | 'BeforeSaveModel' | 'CreateInstance' | 'CreateModel' | 'CreateRelationInstance' | 'DeleteInstance' | 'DeleteModel' | 'DeleteRelationInstance' | 'DiscardInstance' | 'DiscardModel' | 'OpenModel' | 'RenameInstance' | 'SaveModel' | 'SetAttributeValue' | 'AfterCreateModelingConnector' | 'AfterCreateModelingNode' | 'AfterEditAttributeValue' | 'ToolInitialized'	
+
+name ::= ID
+
+ID ::= '^'?('a..z'|'A..Z'|'_') ('a..z'|'A..Z'|'_'|'0..9')*
+
+REALNUMBER::= ('-')? Number
+
+NUMBER::= (HEX | (INT | DECIMAL) ('.' (INT | DECIMAL))?)
+
+HEX ::= ('0x'|'0X') ('0..9'|'a..f'|'A..F'|'_')+
+
+INT ::= '0..9' ('0..9'|'_')*
+
+DECIMAL ::= INT (('e'|'E') ('+'|'-')? INT)?
+
+HEXCOLOR ::= '#' ('a..f'|'A..F'|'0..9') ('a..f'|'A..F'|'0..9') ('a..f'|'A..F'|'0..9') ('a..f'|'A..F'|'0..9')
