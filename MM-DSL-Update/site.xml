@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.xtext.nv.dsl.sdk_1.0.0.201406181629.jar" id="org.xtext.nv.dsl.sdk" version="1.0.0.201406181629">
+      <category name="MM-DSL"/>
+   </feature>
+   <category-def name="MM-DSL" label="MM-DSL">
+      <description>
+         Modeling Method Domain-Specific Language (MM-DSL) Editor. ADOxx compiler is included in this plugin.
+      </description>
+   </category-def>
+</site>

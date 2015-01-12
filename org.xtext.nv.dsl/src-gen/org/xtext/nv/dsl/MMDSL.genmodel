@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.xtext.nv.dsl/src-gen" editDirectory="/org.xtext.nv.dsl.edit/src"
+    editorDirectory="/org.xtext.nv.dsl.editor/src" modelPluginID="org.xtext.nv.dsl"
+    forceOverwrite="true" modelName="MMDSL" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.nv.dsl.edit"
+    editorPluginID="org.xtext.nv.dsl.editor" runtimeVersion="2.9">
+  <genPackages prefix="MMDSL" basePackage="org.xtext.nv.dsl" disposableProviderFactory="true"
+      loadInitialization="true" literalsInterface="false" fileExtensions="mml" ecorePackage="MMDSL.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//AccessType">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AccessType/write"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AccessType/read"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AccessType/internal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//SimpleType">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//SimpleType/String"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//SimpleType/Int"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//SimpleType/Double"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//Font">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/arial"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/arialblack"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/comicsansms"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/couriernew"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/georgia"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/impact"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/lucidaconsole"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/lucidasansunicode"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/palatinolinotype"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/tahoma"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/timesnewroman"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/trebuchetms"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/verdana"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/symbol"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/webdings"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/windings"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/mssansserif"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Font/msserif"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/aliceblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/antiquewhite"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/aqua"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/aquamarine"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/azure"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/beige"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/bisque"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/black"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/blanchedalmond"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/blue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/blueviolet"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/brown"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/burlywood"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/cadetblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/chartreuse"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/chocolate"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/coral"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/cornflowerblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/cornsilk"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/crimson"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/cyan"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkcyan"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkgoldenrod"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkgray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkkhaki"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkmagenta"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkolivegreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkorange"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkorchid"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkred"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darksalmon"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkseagreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkslateblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkslategray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkturquoise"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/darkviolet"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/deeppink"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/deepskyblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/dimgray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/dodgerblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/firebrick"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/floralwhite"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/forestgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/fuchsia"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/gainsboro"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/ghostwhite"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/gold"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/goldenrod"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/gray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/green"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/greenyellow"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/honeydew"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/hotpink"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/indianred"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/indigo"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/ivory"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/khaki"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lavender"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lavenderblush"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lawngreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lemonchiffon"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightcoral"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightcyan"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightgoldenrodyellow"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightgray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightmagenta"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightpink"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightsalmon"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightseagreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightskyblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightslategray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightsteelblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lightyellow"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/lime"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/limegreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/linen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/magenta"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/maroon"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumaquamarine"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumorchid"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumpurple"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumseagreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumslateblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumspringgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumturquoise"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mediumvioletred"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/midnightblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mintcream"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/mistyrose"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/moccasin"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/navajowhite"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/navy"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/oldlace"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/olive"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/olivedrab"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/orange"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/orangered"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/orchid"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/palegoldenrod"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/palegreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/paleturquoise"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/palevioletred"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/papayawhip"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/peachpuff"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/peru"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/pink"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/plum"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/powderblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/purple"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/red"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/rosybrown"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/royalblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/saddlebrown"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/salmon"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/sandybrown"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/seagreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/seashell"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/sienna"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/silver"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/skyblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/slateblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/slategray"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/snow"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/springgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/steelblue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/tan"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/teal"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/thistle"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/tomato"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/turquoise"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/violet"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/wheat"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/white"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/whitesmoke"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/yellow"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//Color/yellowgreen"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//ButtonType">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/ok"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/okcancel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/yesno"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/yesnocancel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/retrycancel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/defok"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/defcancel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/defyes"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/defno"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//ButtonType/defretry"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//AttrGetParams">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AttrGetParams/type"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AttrGetParams/value"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AttrGetParams/name"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//AttrSetParams">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//AttrSetParams/value"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MMDSL.ecore#//EventName">
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforecreatemodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforecreaterelationinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforedeleteinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforedeletemodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforediscardmodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/beforesavemodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/createinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/createmodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/createrelationinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/deleteinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/deletemodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/deleterelationinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/discardinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/discardmodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/openmodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/renameinstance"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/savemodel"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/setattributevalue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/aftercreatemodelingconnector"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/aftercreatemodelingnode"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/aftereditattributevalue"/>
+      <genEnumLiterals ecoreEnumLiteral="MMDSL.ecore#//EventName/toolinitialized"/>
+    </genEnums>
+    <genClasses ecoreClass="MMDSL.ecore#//Root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/methodname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/includelibrarytype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/embedplatformtype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/embedcodetype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/includelibrary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/embedcode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Root/method"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//MethodName">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//MethodName/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//IncludeLibrary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//IncludeLibrary/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//IncludeLibrary/includelibrarytype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//IncludeLibraryType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//IncludeLibraryType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EmbedCode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EmbedCode/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//EmbedCode/embedplatformtype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//EmbedCode/embedcodetype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EmbedCode/embeddedcode"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EmbedPlatformType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EmbedPlatformType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EmbedCodeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EmbedCodeType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//InsertEmbedCode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//InsertEmbedCode/codesnippetname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Method">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/enumeration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/symbolstyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/symbolclass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/symbolrelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/metamodel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/algorithm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Method/event"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Enumeration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Enumeration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Enumeration/enumvalues"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Metamodel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Metamodel/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Metamodel/relation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Metamodel/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Metamodel/modeltype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Class/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/parentclassname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/symbolclass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/classattribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/insertembedcode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Class/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Relation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Relation/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/parentrelationname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/symbolrelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/fromclassname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/toclassname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Relation/insertembedcode"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Attribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Attribute/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Attribute/access"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ClassAttribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassAttribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Reference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Reference/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Reference/refname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RefName">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RefName/modeltypename"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RefName/classname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Type/simpletype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Type/enumtype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EnumType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//EnumType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ModelType/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelType/classname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelType/relationname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelType/modename"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Mode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Mode/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Mode/classname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Mode/relationname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SymbolClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//SymbolClass/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolClass/globalstyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolClass/svgcommand"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SymbolRelation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//SymbolRelation/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolRelation/globalstyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolRelation/svgcommandsfrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolRelation/svgcommandsmiddle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolRelation/svgcommandsto"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SVGCommand">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/insertembedcode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/rectangle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/circle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/ellipse"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/polyline"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/polygon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/text"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/symbolstyle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SVGCommand/symbolstyleref"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Rectangle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Rectangle/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Rectangle/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Rectangle/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Rectangle/height"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Circle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Circle/cx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Circle/cy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Circle/r"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Ellipse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Ellipse/cx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Ellipse/cy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Ellipse/rx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Ellipse/ry"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Line">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Line/x1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Line/y1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Line/x2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Line/y2"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Polyline">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Polyline/points"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Polygon">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Polygon/points"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Path">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Path/pathdata"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Text/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Text/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Text/y"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Text/fontfamily"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Text/fontsize"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Text/fillcolor"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/moveto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/lineto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/horizontallineto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/verticallineto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/curveto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/smoothcurveto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/quadraticbeziercurve"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/smoothquadraticbeziercurveto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//PathData/ellipticalarc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathData/closepath"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//MoveTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//MoveTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//LineTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//LineTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//HorizontalLineTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//HorizontalLineTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//VerticalLineTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VerticalLineTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//CurveTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//CurveTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SmoothCurveTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SmoothCurveTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//QuadraticBezierCurve">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//QuadraticBezierCurve/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SmoothQuadraticBezierCurveTo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SmoothQuadraticBezierCurveTo/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EllipticalArc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//EllipticalArc/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Points">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Points/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Points/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersHV">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersHV/x"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersMLT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersMLT/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersMLT/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersS">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersS/x2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersS/y2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersS/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersS/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersQ">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersQ/x1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersQ/y1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersQ/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersQ/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersC">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/x1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/y1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/x2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/y2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersC/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//PathParametersA">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/rx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/ry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/xaxisrot"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/largearcflag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/sweepflag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//PathParametersA/y"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SymbolStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//SymbolStyle/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolStyle/fillcolor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolStyle/strokecolor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//SymbolStyle/strokewidth"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolStyle/fontfamily"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//SymbolStyle/fontsize"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SymbolStyle/insertembedcode"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FillColor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FillColor/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FillColor/hexcolor"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//StrokeColor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//StrokeColor/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//StrokeColor/hexcolor"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FontFamily">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FontFamily/fontstr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FontFamily/font"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Algorithm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Algorithm/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Algorithm/stmnt"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Statement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Statement/selection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Statement/loop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Statement/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Statement/algorithmoperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Statement/insertembedcode"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SelectionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SelectionStatement/ifcondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SelectionStatement/ifblock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SelectionStatement/elseifcondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SelectionStatement/elseifblock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SelectionStatement/elseblock"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//LoopStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//LoopStatement/whiletloop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//LoopStatement/forloop"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//WhileLoop">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//WhileLoop/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//WhileLoop/whileblock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//WhileLoop/breakcontinue"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ForLoop">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ForLoop/start"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ForLoop/stop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ForLoop/interval"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ForLoop/forblock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ForLoop/breakcontinue"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//BreakContinue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//BreakContinue/break"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//BreakContinue/continue"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Variable/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Variable/opassing"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Variable/varstatement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Variable/variable"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//VarStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/algorithmoperation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/class"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/attribute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/reference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/symbolclass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/symbolrelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/symbolstyle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/embeddedcode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//VarStatement/modeltype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorAssign">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorAssign/assign"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//OperatorAssign/multyassign"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorMultyAssign">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultyAssign/addassign"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultyAssign/subassign"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultyAssign/multiassign"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultyAssign/divassign"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorUnary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorUnary/not"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorMultiply">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultiply/multiply"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultiply/divide"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorMultiply/modulo"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorAdd">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorAdd/add"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorAdd/subtract"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorCompare">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorCompare/greaterequal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorCompare/lesserequal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorCompare/greater"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorCompare/lesser"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorEqual">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorEqual/equal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorEqual/notequal"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorAnd">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorAnd/and"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OperatorOr">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//OperatorOr/or"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Expr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expr/expr"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/operand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/atomic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Expression/true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Expression/false"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Expression/valueString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Expression/valueRealNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Expression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//AlgorithmOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/fileoperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/diroperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/simpleui"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/modeloperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/instanceoperation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AlgorithmOperation/attributeoperation"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//FileOperation/filecopy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//FileOperation/filedelete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//FileOperation/filecreate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//FileOperation/fileread"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//FileOperation/filewrite"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileCopy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileCopy/src"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileCopy/dest"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileDelete">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileDelete/filename"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileCreate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileCreate/filename"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileRead">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileRead/filename"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//FileWrite">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileWrite/filename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileWrite/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//FileWrite/append"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//DirOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//DirOperation/dirsetworking"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//DirOperation/dirgetworking"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//DirOperation/dircreate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//DirOperation/dirdelete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//DirOperation/dirlist"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//DirSetWorking">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//DirSetWorking/dirname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//DirGetWorking"/>
+    <genClasses ecoreClass="MMDSL.ecore#//DirCreate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//DirCreate/dirname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//DirDelete">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//DirDelete/dirname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//DirList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//DirList/dirname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//SimpleUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/editbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/infobox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/errorbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/warningbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/viewbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//SimpleUI/itemoperation"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//EditBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EditBox/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EditBox/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//EditBox/okbuttontext"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//InfoBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InfoBox/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InfoBox/text"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ErrorBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ErrorBox/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ErrorBox/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ErrorBox/buttontype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//WarningBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//WarningBox/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//WarningBox/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//WarningBox/buttontype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ViewBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ViewBox/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ViewBox/text"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ItemOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ItemOperation/menuitem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ItemOperation/contextitem"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//MenuItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//MenuItem/insertmenuitem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//MenuItem/removemenuitem"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//InsertMenuItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InsertMenuItem/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InsertMenuItem/menu"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RemoveMenuItem">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RemoveMenuItem/menuitemname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ContextItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ContextItem/insertcontextitem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ContextItem/removecontextitem"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//InsertContextItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InsertContextItem/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//InsertContextItem/context"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RemoveContextItem">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RemoveContextItem/contextitem"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modelcreate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modeldelete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modeldiscard"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modelsave"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modelload"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelOperation/modelisloaded"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelCreate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ModelCreate/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelCreate/modeltype"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelDelete">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelDelete/modelname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelDiscard">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelDiscard/modelname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelSave">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelSave/modelname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelLoad">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelLoad/modelname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ModelIsLoaded">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ModelIsLoaded/modelname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//InstanceOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//InstanceOperation/classinstance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//InstanceOperation/relationinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstance/classinstancecreate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstance/classinstancedelete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstance/classinstanceget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstance/classinstanceset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstance/classinstancegetall"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstanceCreate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//ClassInstanceCreate/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstanceCreate/nameofclass"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstanceDelete">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstanceDelete/nameofclassinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstanceGet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstanceGet/nameofclassinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstanceGetAll">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstanceGetAll/nameofclass"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//ClassInstanceSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//ClassInstanceSet/nameofclassinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstance/relationinstancecreate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstance/relationinstancedelete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstance/relationinstanceget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstance/relationinstanceset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstance/relationinstancegetall"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstanceCreate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//RelationInstanceCreate/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceCreate/nameofrelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceCreate/classinstancefrom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceCreate/classinstanceto"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstanceDelete">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceDelete/nameofrelationinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstanceGet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceGet/nameofrelationinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstanceGetAll">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceGetAll/nameofrelation"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//RelationInstanceSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//RelationInstanceSet/nameofrelationinstance"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//AttributeOperation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AttributeOperation/attributename"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AttributeOperation/attributeget"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AttributeOperation/attributeset"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//AttributeGet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//AttributeGet/attrgetparams"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//AttributeSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//AttributeSet/attrsetparams"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//AttributeSet/valueString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//AttributeSet/valueRealNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//AttributeSet/valueVariable"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MMDSL.ecore#//Event/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MMDSL.ecore#//Event/algorithmname"/>
+    </genClasses>
+    <genClasses ecoreClass="MMDSL.ecore#//OrExpression"/>
+    <genClasses ecoreClass="MMDSL.ecore#//AndExpression"/>
+    <genClasses ecoreClass="MMDSL.ecore#//EqualExpression"/>
+    <genClasses ecoreClass="MMDSL.ecore#//CompareExpression"/>
+    <genClasses ecoreClass="MMDSL.ecore#//AdditionExpression"/>
+    <genClasses ecoreClass="MMDSL.ecore#//MultiplicationExpression"/>
+  </genPackages>
+</genmodel:GenModel>

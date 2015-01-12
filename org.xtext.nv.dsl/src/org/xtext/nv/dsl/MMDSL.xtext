@@ -1,0 +1,1035 @@
+/*******************************************************************************
+ * Copyright (c) 2015 Niksa Visic.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
+//grammar org.xtext.nv.dsl.MMDSL
+//grammar org.xtext.nv.dsl.MMDSL with org.eclipse.xtext.common.Terminals
+//grammar org.xtext.nv.dsl.MMDSL with org.eclipse.xtext.xbase.Xtype
+grammar org.xtext.nv.dsl.MMDSL with org.eclipse.xtext.xbase.Xbase
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
+import "http://www.eclipse.org/xtext/xbase/Xbase"
+
+generate mMDSL 'http://www.xtext.org/nv/dsl/MMDSL'
+
+// AST Root
+Root:
+	methodname=MethodName
+	(includelibrarytype += IncludeLibraryType | embedplatformtype += EmbedPlatformType | embedcodetype += EmbedCodeType)*
+	(includelibrary += IncludeLibrary)*
+	(embedcode += EmbedCode)*
+	method=Method
+;
+
+// used to generate the ADOxx library name
+MethodName:
+	'method' name=ValidID
+;
+
+// standard library defined for specific metamodeling platform, like ADOxx, Eclipse EMP, ...
+// eg., include <adoxx:graphrep>
+
+IncludeLibrary:
+	'include' '<' name=ValidID (':' includelibrarytype=[IncludeLibraryType|QualifiedName])?  '>'
+;
+
+IncludeLibraryType:
+	'def' 'IncludeLibraryType' name=ValidID
+;
+
+EmbedCode:
+	'embed' name=ValidID '<' embedplatformtype=[EmbedPlatformType|QualifiedName] (':' embedcodetype=[EmbedCodeType|QualifiedName])? '>' 
+	'{' embeddedcode=STRING '}'
+;
+
+EmbedPlatformType:
+	'def' 'EmbedPlatformType' name=ValidID
+;
+
+EmbedCodeType:
+	'def' 'EmbedCodeType' name=ValidID
+;
+
+InsertEmbedCode:
+	'insert' codesnippetname=[EmbedCode|QualifiedName]
+;
+
+// modeling method contains one modeling language aka. metamodel,
+// zero or more algorithms,
+// zero or more mechanisms,
+// zero or more procedures.
+Method:
+	(enumeration += Enumeration)*
+	(symbolstyle += SymbolStyle)*
+	(symbolclass += SymbolClass)*
+	(symbolrelation += SymbolRelation)*
+	metamodel=Metamodel
+	(algorithm += Algorithm)*
+	(event += Event)*
+;
+
+// enumerations are defined inside method scope and can be used as an attribute type
+Enumeration:
+	'enum' name=ValidID '{' (enumvalues += STRING)+ '}'
+;
+
+
+ /*
+  ********************************************* 
+  * Metamodel Grammar
+  *********************************************
+  */
+	
+// a metamodel is a construct containing:
+// 1) at least one class
+// 2) zero or more relations
+// 3) zero or more attributes
+// 4) at least one modeltype
+Metamodel:
+	(class += Class)+
+	(relation += Relation)*
+	(attribute += Attribute)*
+	(modeltype += ModelType)+
+;
+
+// a class is a constructs that:
+// 1) can extend other class
+// 2) can contain zero or more attributes
+Class:
+	'class' name=ValidID ('extends' parentclassname=[Class|QualifiedName])? ('symbol' symbolclass=[SymbolClass|QualifiedName])? 
+	'{' (classattribute += ClassAttribute | attribute += Attribute | insertembedcode += InsertEmbedCode | reference += Reference)* '}'
+;
+
+// a relation is a constructs that:
+// 1) can extend other relation (only attributes are inherited from the parent relation)
+// 2) can contain zero or more attributes
+Relation:
+	'relation' name=ValidID ('extends' parentrelationname=[Relation|QualifiedName])? ('symbol' symbolrelation=[SymbolRelation|QualifiedName])?
+	'from' fromclassname=[Class|QualifiedName] 'to' toclassname=[Class|QualifiedName] 
+	'{' (attribute += Attribute | insertembedcode += InsertEmbedCode)* '}'
+;
+
+Attribute:
+	'attribute' name=ValidID ':' type=Type ('access' ':' access=AccessType)?
+;
+
+// specifies if the attribute is visible and modifiable by the user
+// default is internal (if access is not specified)
+enum AccessType:
+	write = 'write' | read = "read" |  internal = 'internal'
+;
+
+ClassAttribute:
+	'classattribute' name=ValidID ':' type=Type
+;
+
+// references modeling object
+Reference:
+	'reference' name=ValidID '->' refname=RefName
+;
+
+// modeling objects that can be referenced
+RefName:
+	('modeltype' modeltypename=[ModelType|QualifiedName]) ('class' classname=[Class|QualifiedName])?
+;
+
+Type:
+	simpletype=SimpleType | enumtype=EnumType
+;
+
+enum SimpleType:
+	String='string' | Int='int' | Double='double' // double produces a translation error
+;
+
+EnumType:
+	'enum' name=[Enumeration|QualifiedName]
+;
+
+// a modeltype contains the collection of classes and relations
+// it must contain at least one class
+ModelType:
+	'modeltype'	name=ValidID '{' 
+		'classes' (classname += [Class|QualifiedName])+ 
+		'relations' ('none' | (relationname += [Relation|QualifiedName])+) 
+		'modes' ('none' | (modename += Mode)+)
+	'}'
+;
+
+// a modeltype can contain zero or more modes aka. views in modeling canvas
+Mode:
+	'mode' name=ValidID  'include' ('classes' (classname += [Class|QualifiedName])+ 'relations' ('none' | relationname += [Relation|QualifiedName])+)
+;
+
+
+ /*
+  ********************************************* 
+  * Graphical Representation Grammar
+  *********************************************
+  */
+  
+// 1) classes (SymbolClass) and relations (SymbolRelation) can be visualized
+SymbolClass:
+	'classgraph' name=ValidID ('style' globalstyle=[SymbolStyle|QualifiedName] )? '{' (svgcommand += SVGCommand)* '}'
+;
+
+SymbolRelation:
+	'relationgraph' name=ValidID ('style' globalstyle=[SymbolStyle|QualifiedName] )? '{' 
+		'from' (svgcommandsfrom += SVGCommand)*
+		'middle' (svgcommandsmiddle += SVGCommand)*
+		'to' (svgcommandsto += SVGCommand)*
+	'}'
+;
+
+// SVG coordinate system starts with (0,0) in the top left corner
+// it is calculated in pixels (px)
+/*
+ * (0,0)---(x, 0)
+ *   |
+ *   |
+ * (0, y)
+ */
+SVGCommand:
+/*
+ * basic symbol shapes
+ * based on SVG notation
+ * Rectangle <rect>
+ * Circle <circle>
+ * Ellipse <ellipse>
+ * Line <line>
+ * Polyline <polyline>
+ * Polygon <polygon>
+ * Path <path>
+ * Text <text>
+ */
+	(insertembedcode = InsertEmbedCode) |
+	(
+		(rectangle=Rectangle | 
+		circle=Circle |
+		ellipse=Ellipse |
+		line=Line |
+		polyline=Polyline |
+		polygon=Polygon |
+		path=Path |
+		text=Text)
+		(symbolstyle=SymbolStyle | ('style' symbolstyleref=[SymbolStyle|QualifiedName]))?
+	)
+;
+
+Rectangle:
+	'rectangle' 'x' '=' x=RealNumber 'y' '=' y=RealNumber 'w' '=' width=Number 'h' '=' height=Number
+;
+
+Circle:
+	'circle' 'cx' '=' cx=RealNumber 'cy' '=' cy=RealNumber 'r' '=' r=Number
+;
+
+Ellipse:
+	'ellipse' 'cx' '=' cx=RealNumber 'cy' '=' cy=RealNumber 'rx' '=' rx=RealNumber 'ry' '=' ry=RealNumber 
+;
+
+Line:
+	'line' 'x1' '=' x1=RealNumber 'y1' '=' y1=RealNumber 'x2' '=' x2=RealNumber 'y2' '=' y2=RealNumber
+;
+
+Polyline:
+	'polyline' 'points' '=' (points += Points)+ // format x1,y1 x2,y2 ... xn,yn
+;
+
+Polygon:
+	'polygon' 'points' '=' (points += Points)+ // format x1,y1 x2,y2 ... xn,yn
+;
+
+Path:
+	'path' 'd' '=' (pathdata += PathData)+
+;
+
+Text:
+	'text' value=STRING 'x' '=' x=RealNumber 'y' '=' y=RealNumber 
+	('font-family' '=' fontfamily=FontFamily)?
+	('font-size' '=' fontsize=FontSize)?
+	('fill' '=' fillcolor=FillColor )?
+;
+
+PathData:
+	/*  
+    M=moveto
+    L=lineto
+    H=horizontal lineto
+    V=vertical lineto
+    C=curveto
+    S=smooth curveto
+    Q=quadratic Bézier curve
+    T=smooth quadratic Bézier curveto
+    A=elliptical Arc
+    Z=closepath
+*/
+// All of the commands above can also be expressed with lower letters.
+// Capital letters means absolutely positioned, lower cases means relatively positioned.
+	
+	moveto=MoveTo |
+	lineto=LineTo |
+	horizontallineto=HorizontalLineTo |
+	verticallineto=VerticalLineTo |
+	curveto=CurveTo |
+	smoothcurveto=SmoothCurveTo |
+	quadraticbeziercurve=QuadraticBezierCurve |
+	smoothquadraticbeziercurveto=SmoothQuadraticBezierCurveTo |
+	ellipticalarc=EllipticalArc |
+	closepath=ClosePath
+;
+
+MoveTo:
+	('M' | 'm') (parameters += PathParametersMLT)+
+;
+
+LineTo:
+	('L' | 'l') (parameters += PathParametersMLT)+
+;
+
+HorizontalLineTo:
+	('H' | 'h') (parameters += PathParametersHV)+
+;
+
+VerticalLineTo:
+	('V'| 'v') (parameters += PathParametersHV)+
+;
+
+CurveTo:
+	('C' | 'c') (parameters += PathParametersC)+
+;
+
+SmoothCurveTo:
+	('S' | 's') (parameters += PathParametersS)+
+;
+
+QuadraticBezierCurve:
+	('Q' | 'q') (parameters += PathParametersQ)+
+;
+
+SmoothQuadraticBezierCurveTo:
+	('T' | 't') (parameters += PathParametersMLT)+
+;
+
+EllipticalArc:
+	('A' | 'a') (parameters += PathParametersA)+
+;
+
+ClosePath:
+	('Z' | 'z')
+;
+
+Points:
+	x=RealNumber ',' y=RealNumber
+;
+
+// 1 parameter - H, V
+PathParametersHV:
+	x=RealNumber
+;
+
+// 2 parameters - M, L, T
+PathParametersMLT:
+	x=RealNumber ',' y=RealNumber
+;
+
+// 4 parameters - S
+PathParametersS:
+	x2=RealNumber y2=RealNumber x=RealNumber y=RealNumber
+;
+
+// 4 parameters - Q
+PathParametersQ:
+	x1=RealNumber y1=RealNumber x=RealNumber y=RealNumber
+;
+
+// 6 parameters - C
+PathParametersC:
+	x1=RealNumber y1=RealNumber x2=RealNumber y2=RealNumber x=RealNumber y=RealNumber
+;
+
+// 7 parameters - A
+PathParametersA:
+	rx=RealNumber ',' ry=RealNumber xaxisrot=RealNumber largearcflag=Number sweepflag=Number x=RealNumber y=RealNumber
+;
+
+SymbolStyle:
+	'style' name=ValidID '{' 
+		'fill' ':' ('none' | fillcolor=FillColor) 
+		'stroke' ':' strokecolor=StrokeColor
+		'stroke-width' ':' strokewidth=StrokeWidth
+		('font-family' ':' fontfamily=FontFamily)?
+		('font-size' ':' fontsize=FontSize)?
+		(insertembedcode += InsertEmbedCode)*
+	'}'
+;
+
+FillColor:
+	{FillColor}
+	color=Color | hexcolor=HEXCOLOR
+;
+
+StrokeColor:
+	{StrokeColor}
+	color=Color | hexcolor=HEXCOLOR
+;
+
+StrokeWidth:
+	Number
+;
+
+FontFamily:
+	{FontFamily}
+	fontstr=STRING | font=Font
+;
+
+FontSize:
+	Number
+;
+
+// standard Windows Fonts
+enum Font:
+	arial='Arial' |
+	arialblack='Arial_Black' |
+	comicsansms='Comic_Sans_MS' |
+    couriernew='Courier_New' |
+	georgia='Georgia' |
+	impact='Impact' |
+	lucidaconsole='Lucida_Console' |
+	lucidasansunicode='Lucida_Sans_Unicode' |
+	palatinolinotype='Palatino_Linotype' |
+	tahoma='Tahoma' |
+	timesnewroman='Times_New_Roman' |
+	trebuchetms='Trebuchet_MS' |
+	verdana='Verdana' |
+	symbol='Symbol' |
+	webdings='Webdings' |
+	windings='Wingdings' |
+	mssansserif='MS_Sans_Serif' |
+	msserif='MS_Serif'
+;
+
+// standard HTML Colors
+enum Color:
+	aliceblue='aliceblue' | 
+	antiquewhite='antiquewhite' | 
+	aqua='aqua' | 
+	aquamarine='aquamarine' | 
+	azure='azure' | 
+	beige='beige' | 
+	bisque='bisque' | 
+	black='black' | 
+	blanchedalmond='blanchedalmond' | 
+	blue='blue' | 
+	blueviolet='blueviolet' | 
+	brown='brown' | 
+	burlywood='burlywood' | 
+	cadetblue='cadetblue' | 
+	chartreuse='chartreuse' | 
+	chocolate='chocolate' | 
+	coral='coral' | 
+	cornflowerblue='cornflowerblue' | 
+	cornsilk='cornsilk' | 
+	crimson='crimson' | 
+	cyan='cyan' | 
+	darkblue ='darkblue' | 
+	darkcyan='darkcyan' | 
+	darkgoldenrod='darkgoldenrod' | 
+	darkgray='darkgray' | 
+	darkgreen='darkgreen' | 
+	darkkhaki='darkkhaki' | 
+	darkmagenta='darkmagenta' | 
+	darkolivegreen='darkolivegreen' | 
+	darkorange='darkorange' | 
+	darkorchid='darkorchid' | 
+	darkred='darkred' | 
+	darksalmon='darksalmon' | 
+	darkseagreen='darkseagreen' | 
+	darkslateblue='darkslateblue' | 
+	darkslategray='darkslategray' | 
+	darkturquoise='darkturquoise' | 
+	darkviolet='darkviolet' | 
+	deeppink='deeppink' | 
+	deepskyblue='deepskyblue' | 
+	dimgray='dimgray' | 
+	dodgerblue='dodgerblue' | 
+	firebrick='firebrick' | 
+	floralwhite='floralwhite' | 
+	forestgreen='forestgreen' | 
+	fuchsia='fuchsia' | 
+	gainsboro='gainsboro' | 
+	ghostwhite='ghostwhite' | 
+	gold='gold' | 
+	goldenrod='goldenrod' | 
+	gray='gray' | 
+	green='green' | 
+	greenyellow='greenyellow' | 
+	honeydew='honeydew' | 
+	hotpink='hotpink' | 
+	indianred='indianred' | 
+	indigo='indigo' | 
+	ivory='ivory' | 
+	khaki='khaki' | 
+	lavender='lavender' | 
+	lavenderblush='lavenderblush' | 
+	lawngreen='lawngreen' | 
+	lemonchiffon='lemonchiffon' | 
+	lightblue='lightblue' | 
+	lightcoral='lightcoral' | 
+	lightcyan='lightcyan' | 
+	lightgoldenrodyellow='lightgoldenrodyellow' | 
+	lightgreen='lightgreen' | 
+	lightgray='lightgray' | 
+	lightmagenta='lightmagenta' | 
+	lightpink='lightpink' | 
+	lightsalmon='lightsalmon' | 
+	lightseagreen='lightseagreen' | 
+	lightskyblue='lightskyblue' | 
+	lightslategray='lightslategray' | 
+	lightsteelblue='lightsteelblue' | 
+	lightyellow='lightyellow' | 
+	lime='lime' | 
+	limegreen='limegreen' | 
+	linen='linen' | 
+	magenta='magenta' | 
+	maroon='maroon' | 
+	mediumaquamarine='mediumaquamarine' | 
+	mediumblue='mediumblue' | 
+	mediumorchid='mediumorchid' | 
+	mediumpurple='mediumpurple' | 
+	mediumseagreen='mediumseagreen' | 
+	mediumslateblue='mediumslateblue' | 
+	mediumspringgreen='mediumspringgreen' | 
+	mediumturquoise='mediumturquoise' | 
+	mediumvioletred='mediumvioletred' | 
+	midnightblue='midnightblue' | 
+	mintcream='mintcream' | 
+	mistyrose='mistyrose' | 
+	moccasin='moccasin' | 
+	navajowhite='navajowhite' | 
+	navy='navy' | 
+	oldlace='oldlace' | 
+	olive='olive' | 
+	olivedrab='olivedrab' | 
+	orange='orange' | 
+	orangered='orangered' | 
+	orchid='orchid' | 
+	palegoldenrod='palegoldenrod' | 
+	palegreen='palegreen' | 
+	paleturquoise='paleturquoise' | 
+	palevioletred='palevioletred' | 
+	papayawhip='papayawhip' | 
+	peachpuff='peachpuff' | 
+	peru='peru' | 
+	pink='pink' | 
+	plum='plum' | 
+	powderblue='powderblue' | 
+	purple='purple' | 
+	red='red' | 
+	rosybrown='rosybrown' | 
+	royalblue='royalblue' | 
+	saddlebrown='saddlebrown' | 
+	salmon='salmon' | 
+	sandybrown='sandybrown' | 
+	seagreen='seagreen' | 
+	seashell='seashell' | 
+	sienna='sienna' | 
+	silver='silver' | 
+	skyblue='skyblue' | 
+	slateblue='slateblue' | 
+	slategray='slategray' | 
+	snow='snow' | 
+	springgreen='springgreen' | 
+	steelblue='steelblue' | 
+	tan='tan' | 
+	teal='teal' | 
+	thistle='thistle' | 
+	tomato='tomato' | 
+	turquoise='turquoise' | 
+	violet='violet' | 
+	wheat='wheat' | 
+	white='white' | 
+	whitesmoke='whitesmoke' | 
+	yellow='yellow' | 
+	yellowgreen	= 'yellowgreen'
+;
+
+
+ /*
+  ********************************************* 
+  * Algorithm Grammar
+  *********************************************
+  */
+
+Algorithm:
+	'algorithm' name=ValidID '{' stmnt += Statement* '}'
+;
+
+// all possible statements for algorithm implementation
+Statement:
+	selection=SelectionStatement |
+	loop=LoopStatement |
+	variable=Variable |
+	algorithmoperation = AlgorithmOperation |
+	insertembedcode = InsertEmbedCode
+;
+
+// selection: if-elseif-else
+SelectionStatement:
+	('if' '(' ifcondition=Expr ')' '{' ifblock+=Statement* '}')
+	(('elseif''(' elseifcondition+=Expr ')' '{' elseifblock+=Statement* '}')* 'else' '{' elseblock+=Statement* '}')?
+;
+
+// loops
+LoopStatement:
+	whiletloop=WhileLoop | forloop=ForLoop
+;
+
+WhileLoop:
+	'while' '(' condition=Expr ')' '{' (whileblock+=Statement | breakcontinue+=BreakContinue)* '}'
+;
+
+ForLoop:
+	'for' '(' start=INT ';' stop=INT ';' interval=INT ')' '{' (forblock+=Statement | breakcontinue+=BreakContinue)* '}'
+;
+
+BreakContinue:
+	break='break' | continue='continue'
+;
+
+// variable declaration and initialization
+Variable:
+	('var' name=ValidID (opassing=OperatorAssign varstatement=VarStatement)?) | 
+	(variable=[Variable|QualifiedName] opassing=OperatorAssign varstatement=VarStatement)
+;
+
+// list of statements that can be used as variable assignments
+VarStatement:
+	expression=Expr |
+	algorithmoperation = AlgorithmOperation | 
+	('class' class=[Class|QualifiedName]) |
+	('attribute' attribute=[Attribute|QualifiedName]) | 
+	('reference' reference=[Reference|QualifiedName]) |
+	('symbolclass' symbolclass=[SymbolClass|QualifiedName]) | 
+	('symbolrelation' symbolrelation=[SymbolRelation|QualifiedName]) | 
+	('symbolstyle' symbolstyle=[SymbolStyle|QualifiedName]) | 
+	('embedded' embeddedcode=[EmbedCode|QualifiedName]) |
+	('modeltype' modeltype=[ModelType|QualifiedName])	
+;
+
+// precednece - last
+OperatorAssign:
+	assign='=' | multyassign=OperatorMultyAssign
+;
+
+OperatorMultyAssign:
+	addassign='+=' | subassign='-=' | multiassign='*=' | divassign='/='
+;
+
+// precednece 1
+OperatorUnary:
+	not='!'
+;
+
+// precednece 2
+OperatorMultiply:
+	multiply='*' | divide='/' | modulo = '%'
+;
+
+// precednece 3
+OperatorAdd:
+	add='+' | subtract='-' 
+;
+
+// precednece 4
+OperatorCompare:
+	greaterequal='>=' | lesserequal='<=' | greater='>' | lesser='<'
+;
+
+// precednece 5
+OperatorEqual:
+	equal='==' | notequal='!='
+;
+
+// precednece 6
+OperatorAnd:
+	and='&&'
+;
+
+// precednece 7
+OperatorOr:
+	or='||'
+;
+
+// lowest precedence operation
+Expr:
+	expr=OrExpression
+;
+
+// 7
+OrExpression returns Expression:
+	AndExpression (=>({OrExpression.left=current} op=OperatorOr) right=AndExpression)*
+;
+
+// 6
+AndExpression returns Expression:
+	EqualExpression (=>({AndExpression.left=current} op=OperatorAnd) right=EqualExpression)*
+;
+
+// 5
+EqualExpression returns Expression:
+	CompareExpression (=>({EqualExpression.left=current} op=OperatorEqual) right=CompareExpression)*
+;
+
+// 4
+CompareExpression returns Expression:
+	AdditionExpression(=>({CompareExpression.left=current} op=OperatorCompare) right=AdditionExpression)*
+;
+
+// 3
+AdditionExpression returns Expression:
+	MultiplicationExpression (=>({AdditionExpression.left=current} op=OperatorAdd) right=MultiplicationExpression)*
+;
+
+// 2
+MultiplicationExpression returns Expression:
+	UnaryExpression (=>({MultiplicationExpression.left=current} op=OperatorMultiply) right=UnaryExpression)*
+;
+
+// 1
+UnaryExpression returns Expression:
+	(op=OperatorUnary)? operand=PrimaryExpression 
+;
+
+PrimaryExpression returns Expression:
+	atomic=AtomicExpression | ('(' expression=OrExpression ')')
+;
+
+AtomicExpression returns Expression:
+	true='true' | false='false' | variable=[Variable|QualifiedName] |
+	valueString=STRING | valueRealNumber=RealNumber
+;
+
+
+ /*
+  ********************************************* 
+  * Algorithm Operations - ADOscript
+  *********************************************
+  */
+
+AlgorithmOperation:
+	fileoperation=FileOperation |
+	diroperation=DirOperation |
+	simpleui=SimpleUI |
+	modeloperation=ModelOperation |
+	instanceoperation=InstanceOperation |
+	attributeoperation=AttributeOperation
+;
+
+// file
+FileOperation:
+	'file' '.' (filecopy = FileCopy | filedelete = FileDelete | filecreate = FileCreate | fileread = FileRead | filewrite = FileWrite)
+;
+
+FileCopy:
+	'copy' 'source' src=STRING 'destination' dest=STRING
+;
+
+FileDelete:
+	'delete' filename=STRING
+;
+
+FileCreate:
+	'create' filename=STRING
+;
+
+FileRead:
+	'read' filename=STRING
+;
+
+FileWrite:
+	'write' filename=STRING 'text' text=STRING (append='append')?
+;
+
+// directory
+DirOperation:
+	'dir' '.' (dirsetworking=DirSetWorking | dirgetworking=DirGetWorking | dircreate=DirCreate | dirdelete=DirDelete | dirlist=DirList)
+;
+
+DirSetWorking:
+	'set' dirname=STRING
+;
+
+DirGetWorking:
+	{DirGetWorking}
+	'get' 
+;
+
+DirCreate:
+	'create' dirname=STRING
+;
+
+DirDelete:
+	'delete' dirname=STRING
+;
+
+DirList:
+	'list' dirname=STRING
+;
+
+// simple UI
+SimpleUI:
+	'ui' '.' (editbox=EditBox | infobox=InfoBox | errorbox=ErrorBox | warningbox=WarningBox | viewbox=ViewBox | itemoperation=ItemOperation)
+;
+
+EditBox:
+	'editbox' 'title' title=STRING 'text' text=STRING ('button' okbuttontext=STRING)?
+;
+
+InfoBox:
+	'infobox' 'title' title=STRING 'text' text=STRING
+;
+
+ErrorBox:
+	'errorbox' 'title' title=STRING 'text' text=STRING 'button' buttontype=ButtonType
+;
+
+WarningBox:
+	'warningbox' 'title' title=STRING 'text' text=STRING 'button' buttontype=ButtonType
+;
+
+enum ButtonType:
+	ok='ok' | okcancel='ok-cancel' | yesno='yes-no' | yesnocancel='yes-no-cancel' | retrycancel='retry-cancel' | 
+	defok='def-ok' | defcancel='def-cancel' | defyes='def-yes' | defno='def-no' | defretry='def-retry'
+;
+
+ViewBox:
+	'viewbox' 'title' title=STRING 'text' text=STRING
+;
+
+// menu item manipulation (application) - is a part of SimpleUI
+ItemOperation:
+	'item' '.' (menuitem=MenuItem | contextitem=ContextItem)
+;
+
+MenuItem:
+	'menu' '.' (insertmenuitem=InsertMenuItem | removemenuitem=RemoveMenuItem)
+;
+
+InsertMenuItem:
+	'insert' name=ValidID 'to' menu=ValidID
+;
+
+RemoveMenuItem:
+	'remove' menuitemname=[InsertMenuItem|QualifiedName]
+;
+
+ContextItem:
+	'context' '.' (insertcontextitem=InsertContextItem | removecontextitem=RemoveContextItem)
+;
+
+InsertContextItem:
+	'insert' name=ValidID 'to' context=ValidID
+;
+
+RemoveContextItem:
+	'remove' contextitem=[InsertContextItem|QualifiedName]
+;
+
+// model manipulation (core)
+ModelOperation:
+	'model' '.' (modelcreate=ModelCreate | modeldelete=ModelDelete | modeldiscard=ModelDiscard | 
+		modelsave=ModelSave | modelload=ModelLoad | modelisloaded=ModelIsLoaded)
+;
+
+ModelCreate:
+	'create' name=ValidID modeltype=[ModelType] 
+;
+
+ModelDelete:
+	'delete' modelname=[ModelCreate|QualifiedName]
+;
+
+ModelDiscard:
+	'discard' modelname=[ModelCreate|QualifiedName]
+;
+
+ModelSave:
+	'save' modelname=[ModelCreate|QualifiedName]
+;
+
+ModelLoad:
+	'load' modelname=[ModelCreate|QualifiedName]
+;
+
+ModelIsLoaded:
+	'isloaded' modelname=[ModelCreate|QualifiedName]
+;
+
+// instance manipulation (core)
+InstanceOperation:
+	'instance' '.' (classinstance=ClassInstance | relationinstance=RelationInstance)
+;
+
+ClassInstance:
+	'class' '.' (classinstancecreate=ClassInstanceCreate | classinstancedelete=ClassInstanceDelete | classinstanceget=ClassInstanceGet | classinstanceset=ClassInstanceSet | classinstancegetall=ClassInstanceGetAll)
+;
+
+ClassInstanceCreate:
+	'create' name=ValidID nameofclass=[Class|QualifiedName]
+;
+
+ClassInstanceDelete:
+	'delete' nameofclassinstance=[ClassInstanceCreate|QualifiedName]
+;
+
+ClassInstanceGet:
+	'get' nameofclassinstance=[ClassInstanceCreate|QualifiedName]
+;
+
+
+ClassInstanceGetAll:
+	'getall' nameofclass=[Class|QualifiedName]
+;
+
+ClassInstanceSet:
+	'set' nameofclassinstance=[ClassInstanceCreate|QualifiedName]
+;
+
+RelationInstance:
+	'relation' '.' (relationinstancecreate=RelationInstanceCreate | relationinstancedelete=RelationInstanceDelete | relationinstanceget=RelationInstanceGet | relationinstanceset=RelationInstanceSet | relationinstancegetall=RelationInstanceGetAll) 
+;
+
+RelationInstanceCreate:
+	'create' name=ValidID nameofrelation=[Relation|QualifiedName] 'from' classinstancefrom=[ClassInstanceCreate|QualifiedName] 'to' classinstanceto=[ClassInstanceCreate|QualifiedName]
+;
+
+RelationInstanceDelete:
+	'delete' nameofrelationinstance=[RelationInstanceCreate|QualifiedName]
+;
+
+RelationInstanceGet:
+	'get' nameofrelationinstance=[RelationInstanceCreate|QualifiedName]
+;
+
+RelationInstanceGetAll:
+	'getall' nameofrelation=[Relation|QualifiedName]
+;
+
+RelationInstanceSet:
+	'set' nameofrelationinstance=[RelationInstanceCreate|QualifiedName]
+;
+
+
+// attribute manipulation (core)
+AttributeOperation:
+	attributename=[Attribute|QualifiedName] '.' (attributeget=AttributeGet | attributeset=AttributeSet)
+;
+
+AttributeGet:
+	'get' '.' attrgetparams=AttrGetParams
+;
+
+enum AttrGetParams:
+	type='type' | 
+	value='value' | 
+	name='name'
+;
+
+AttributeSet:
+	'set' '.' attrsetparams=AttrSetParams (valueString=STRING | valueRealNumber=RealNumber | valueVariable=[Variable|QualifiedName])
+;
+
+enum AttrSetParams:
+	value='value'
+;
+
+ /*
+  ********************************************* 
+  * Events - ADOscript
+  *********************************************
+  */
+
+Event:
+	'event' '.' name=EventName '.' 'execute' '.' algorithmname=[Algorithm|QualifiedName]
+;
+
+enum EventName:
+	beforecreatemodel='BeforeCreateModel' |
+	beforecreaterelationinstance='BeforeCreateRelationInstance' |
+	beforedeleteinstance='BeforeDeleteInstance' |
+	beforedeletemodel='BeforeDeleteModel' |
+	beforediscardmodel='BeforeDiscardModel' |
+	beforesavemodel='BeforeSaveModel' |
+	createinstance='CreateInstance' |
+	createmodel='CreateModel' |
+	createrelationinstance='CreateRelationInstance' |
+	deleteinstance='DeleteInstance' |
+	deletemodel='DeleteModel' |
+	deleterelationinstance='DeleteRelationInstance' |
+	discardinstance='DiscardInstance' |
+	discardmodel='DiscardModel' |
+	openmodel='OpenModel' |
+	renameinstance='RenameInstance' |
+	savemodel='SaveModel' |
+	setattributevalue='SetAttributeValue' |
+	aftercreatemodelingconnector='AfterCreateModelingConnector'	|
+	aftercreatemodelingnode='AfterCreateModelingNode' |
+	aftereditattributevalue='AfterEditAttributeValue' |
+	toolinitialized='ToolInitialized'	
+;
+
+ /*
+  ********************************************* 
+  * Expressions and Operators Grammar (Xbase)
+  *********************************************
+  */
+
+// https://github.com/eclipse/xtext/blob/master/plugins/org.eclipse.xtext.xbase/src/org/eclipse/xtext/xbase/Xbase.xtext
+
+
+ /*
+  ********************************************* 
+  * Terminals
+  *********************************************
+  */
+
+//terminal ID : 
+//  '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')* 
+//  ;
+//
+//terminal STRING : 
+//			'"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+//			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'"
+//;
+//
+//terminal ML_COMMENT	: '/*' -> '*/';
+//terminal SL_COMMENT 	: '//' !('\n'|'\r')* ('\r'? '\n')?;
+//
+//terminal WS			: (' '|'\t'|'\r'|'\n')+;
+//
+//terminal ANY_OTHER: .;
+
+// int with negative values
+//terminal INT returns ecore::EInt: 
+//	('-')? ('0'..'9')+
+//;
+
+RealNumber:
+	('-')? Number
+;
+
+// hex color representation: #123456
+terminal HEXCOLOR:
+	'#'
+	('a'..'f'|'A'..'F'|'0'..'9')
+	('a'..'f'|'A'..'F'|'0'..'9')
+	('a'..'f'|'A'..'F'|'0'..'9')
+	('a'..'f'|'A'..'F'|'0'..'9')
+	('a'..'f'|'A'..'F'|'0'..'9')
+	('a'..'f'|'A'..'F'|'0'..'9') 
+;
