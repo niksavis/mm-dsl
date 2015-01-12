@@ -1,1 +1,0 @@
-Copy this folder to eclipse directory.
