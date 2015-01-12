@@ -326,16 +326,16 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		//"def" "EmbedCodeType" name=ValidID
 		public Group getGroup() { return cGroup; }
 
-		//"def"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.6/@alternatives/@elements.0'
 		public Keyword getDefKeyword_0() { return cDefKeyword_0; }
 
-		//"EmbedCodeType"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.6/@alternatives/@elements.1'
 		public Keyword getEmbedCodeTypeKeyword_1() { return cEmbedCodeTypeKeyword_1; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.6/@alternatives/@elements.2'
 		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.6/@alternatives/@elements.2/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_2_0() { return cNameValidIDParserRuleCall_2_0; }
 	}
 
@@ -347,23 +347,22 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cCodesnippetnameEmbedCodeCrossReference_1_0 = (CrossReference)cCodesnippetnameAssignment_1.eContents().get(0);
 		private final RuleCall cCodesnippetnameEmbedCodeQualifiedNameParserRuleCall_1_0_1 = (RuleCall)cCodesnippetnameEmbedCodeCrossReference_1_0.eContents().get(1);
 		
-		//InsertEmbedCode:
-		//	"insert" codesnippetname=[EmbedCode|QualifiedName];
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/InsertEmbedCode'
 		public ParserRule getRule() { return rule; }
 
-		//"insert" codesnippetname=[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.7/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"insert"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.7/@alternatives/@elements.0'
 		public Keyword getInsertKeyword_0() { return cInsertKeyword_0; }
 
-		//codesnippetname=[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.7/@alternatives/@elements.1'
 		public Assignment getCodesnippetnameAssignment_1() { return cCodesnippetnameAssignment_1; }
 
-		//[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.7/@alternatives/@elements.1/@terminal'
 		public CrossReference getCodesnippetnameEmbedCodeCrossReference_1_0() { return cCodesnippetnameEmbedCodeCrossReference_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.7/@alternatives/@elements.1/@terminal/@terminal'
 		public RuleCall getCodesnippetnameEmbedCodeQualifiedNameParserRuleCall_1_0_1() { return cCodesnippetnameEmbedCodeQualifiedNameParserRuleCall_1_0_1; }
 	}
 
@@ -385,59 +384,52 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cEventAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final RuleCall cEventEventParserRuleCall_6_0 = (RuleCall)cEventAssignment_6.eContents().get(0);
 		
-		//// modeling method contains one modeling language aka. metamodel,
-		//// zero or more algorithms,
-		//// zero or more mechanisms,
-		//// zero or more procedures.
-		//Method:
-		//	enumeration+=Enumeration* symbolstyle+=SymbolStyle* symbolclass+=SymbolClass* symbolrelation+=SymbolRelation*
-		//	metamodel=Metamodel algorithm+=Algorithm* event+=Event*;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Method'
 		public ParserRule getRule() { return rule; }
 
-		//enumeration+=Enumeration* symbolstyle+=SymbolStyle* symbolclass+=SymbolClass* symbolrelation+=SymbolRelation*
-		//metamodel=Metamodel algorithm+=Algorithm* event+=Event*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//enumeration+=Enumeration*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.0'
 		public Assignment getEnumerationAssignment_0() { return cEnumerationAssignment_0; }
 
-		//Enumeration
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.0/@terminal'
 		public RuleCall getEnumerationEnumerationParserRuleCall_0_0() { return cEnumerationEnumerationParserRuleCall_0_0; }
 
-		//symbolstyle+=SymbolStyle*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.1'
 		public Assignment getSymbolstyleAssignment_1() { return cSymbolstyleAssignment_1; }
 
-		//SymbolStyle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.1/@terminal'
 		public RuleCall getSymbolstyleSymbolStyleParserRuleCall_1_0() { return cSymbolstyleSymbolStyleParserRuleCall_1_0; }
 
-		//symbolclass+=SymbolClass*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.2'
 		public Assignment getSymbolclassAssignment_2() { return cSymbolclassAssignment_2; }
 
-		//SymbolClass
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.2/@terminal'
 		public RuleCall getSymbolclassSymbolClassParserRuleCall_2_0() { return cSymbolclassSymbolClassParserRuleCall_2_0; }
 
-		//symbolrelation+=SymbolRelation*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.3'
 		public Assignment getSymbolrelationAssignment_3() { return cSymbolrelationAssignment_3; }
 
-		//SymbolRelation
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.3/@terminal'
 		public RuleCall getSymbolrelationSymbolRelationParserRuleCall_3_0() { return cSymbolrelationSymbolRelationParserRuleCall_3_0; }
 
-		//metamodel=Metamodel
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.4'
 		public Assignment getMetamodelAssignment_4() { return cMetamodelAssignment_4; }
 
-		//Metamodel
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.4/@terminal'
 		public RuleCall getMetamodelMetamodelParserRuleCall_4_0() { return cMetamodelMetamodelParserRuleCall_4_0; }
 
-		//algorithm+=Algorithm*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.5'
 		public Assignment getAlgorithmAssignment_5() { return cAlgorithmAssignment_5; }
 
-		//Algorithm
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.5/@terminal'
 		public RuleCall getAlgorithmAlgorithmParserRuleCall_5_0() { return cAlgorithmAlgorithmParserRuleCall_5_0; }
 
-		//event+=Event*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.6'
 		public Assignment getEventAssignment_6() { return cEventAssignment_6; }
 
-		//Event
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.8/@alternatives/@elements.6/@terminal'
 		public RuleCall getEventEventParserRuleCall_6_0() { return cEventEventParserRuleCall_6_0; }
 	}
 
@@ -452,33 +444,31 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cEnumvaluesSTRINGTerminalRuleCall_3_0 = (RuleCall)cEnumvaluesAssignment_3.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
-		//// enumerations are defined inside method scope and can be used as an attribute type
-		//Enumeration:
-		//	"enum" name=ValidID "{" enumvalues+=STRING+ "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Enumeration'
 		public ParserRule getRule() { return rule; }
 
-		//"enum" name=ValidID "{" enumvalues+=STRING+ "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"enum"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.0'
 		public Keyword getEnumKeyword_0() { return cEnumKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.2'
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//enumvalues+=STRING+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.3'
 		public Assignment getEnumvaluesAssignment_3() { return cEnumvaluesAssignment_3; }
 
-		//STRING
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.3/@terminal'
 		public RuleCall getEnumvaluesSTRINGTerminalRuleCall_3_0() { return cEnumvaluesSTRINGTerminalRuleCall_3_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.9/@alternatives/@elements.4'
 		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
 	}
 
@@ -494,44 +484,34 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cModeltypeAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cModeltypeModelTypeParserRuleCall_3_0 = (RuleCall)cModeltypeAssignment_3.eContents().get(0);
 		
-		/// *
-		//  ********************************************* 
-		//  * Metamodel Grammar
-		//  *********************************************
-		//  * / // a metamodel is a construct containing:
-		//// 1) at least one class
-		//// 2) zero or more relations
-		//// 3) zero or more attributes
-		//// 4) at least one modeltype
-		//Metamodel:
-		//	class+=Class+ relation+=Relation* attribute+=Attribute* modeltype+=ModelType+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Metamodel'
 		public ParserRule getRule() { return rule; }
 
-		//class+=Class+ relation+=Relation* attribute+=Attribute* modeltype+=ModelType+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//class+=Class+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.0'
 		public Assignment getClassAssignment_0() { return cClassAssignment_0; }
 
-		//Class
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.0/@terminal'
 		public RuleCall getClassClassParserRuleCall_0_0() { return cClassClassParserRuleCall_0_0; }
 
-		//relation+=Relation*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.1'
 		public Assignment getRelationAssignment_1() { return cRelationAssignment_1; }
 
-		//Relation
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.1/@terminal'
 		public RuleCall getRelationRelationParserRuleCall_1_0() { return cRelationRelationParserRuleCall_1_0; }
 
-		//attribute+=Attribute*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.2'
 		public Assignment getAttributeAssignment_2() { return cAttributeAssignment_2; }
 
-		//Attribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.2/@terminal'
 		public RuleCall getAttributeAttributeParserRuleCall_2_0() { return cAttributeAttributeParserRuleCall_2_0; }
 
-		//modeltype+=ModelType+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.3'
 		public Assignment getModeltypeAssignment_3() { return cModeltypeAssignment_3; }
 
-		//ModelType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.10/@alternatives/@elements.3/@terminal'
 		public RuleCall getModeltypeModelTypeParserRuleCall_3_0() { return cModeltypeModelTypeParserRuleCall_3_0; }
 	}
 
@@ -563,90 +543,82 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cReferenceReferenceParserRuleCall_5_3_0 = (RuleCall)cReferenceAssignment_5_3.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
-		//// a class is a constructs that:
-		//// 1) can extend other class
-		//// 2) can contain zero or more attributes
-		//Class:
-		//	"class" name=ValidID ("extends" parentclassname=[Class|QualifiedName])? ("symbol"
-		//	symbolclass=[SymbolClass|QualifiedName])? "{" (classattribute+=ClassAttribute | attribute+=Attribute |
-		//	insertembedcode+=InsertEmbedCode | reference+=Reference)* "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Class'
 		public ParserRule getRule() { return rule; }
 
-		//"class" name=ValidID ("extends" parentclassname=[Class|QualifiedName])? ("symbol"
-		//symbolclass=[SymbolClass|QualifiedName])? "{" (classattribute+=ClassAttribute | attribute+=Attribute |
-		//insertembedcode+=InsertEmbedCode | reference+=Reference)* "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"class"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.0'
 		public Keyword getClassKeyword_0() { return cClassKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//("extends" parentclassname=[Class|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.2'
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"extends"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.2/@elements.0'
 		public Keyword getExtendsKeyword_2_0() { return cExtendsKeyword_2_0; }
 
-		//parentclassname=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.2/@elements.1'
 		public Assignment getParentclassnameAssignment_2_1() { return cParentclassnameAssignment_2_1; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.2/@elements.1/@terminal'
 		public CrossReference getParentclassnameClassCrossReference_2_1_0() { return cParentclassnameClassCrossReference_2_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.2/@elements.1/@terminal/@terminal'
 		public RuleCall getParentclassnameClassQualifiedNameParserRuleCall_2_1_0_1() { return cParentclassnameClassQualifiedNameParserRuleCall_2_1_0_1; }
 
-		//("symbol" symbolclass=[SymbolClass|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.3'
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"symbol"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.3/@elements.0'
 		public Keyword getSymbolKeyword_3_0() { return cSymbolKeyword_3_0; }
 
-		//symbolclass=[SymbolClass|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.3/@elements.1'
 		public Assignment getSymbolclassAssignment_3_1() { return cSymbolclassAssignment_3_1; }
 
-		//[SymbolClass|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.3/@elements.1/@terminal'
 		public CrossReference getSymbolclassSymbolClassCrossReference_3_1_0() { return cSymbolclassSymbolClassCrossReference_3_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.3/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolclassSymbolClassQualifiedNameParserRuleCall_3_1_0_1() { return cSymbolclassSymbolClassQualifiedNameParserRuleCall_3_1_0_1; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.4'
 		public Keyword getLeftCurlyBracketKeyword_4() { return cLeftCurlyBracketKeyword_4; }
 
-		//(classattribute+=ClassAttribute | attribute+=Attribute | insertembedcode+=InsertEmbedCode | reference+=Reference)*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5'
 		public Alternatives getAlternatives_5() { return cAlternatives_5; }
 
-		//classattribute+=ClassAttribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.0'
 		public Assignment getClassattributeAssignment_5_0() { return cClassattributeAssignment_5_0; }
 
-		//ClassAttribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.0/@terminal'
 		public RuleCall getClassattributeClassAttributeParserRuleCall_5_0_0() { return cClassattributeClassAttributeParserRuleCall_5_0_0; }
 
-		//attribute+=Attribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.1'
 		public Assignment getAttributeAssignment_5_1() { return cAttributeAssignment_5_1; }
 
-		//Attribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.1/@terminal'
 		public RuleCall getAttributeAttributeParserRuleCall_5_1_0() { return cAttributeAttributeParserRuleCall_5_1_0; }
 
-		//insertembedcode+=InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.2'
 		public Assignment getInsertembedcodeAssignment_5_2() { return cInsertembedcodeAssignment_5_2; }
 
-		//InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.2/@terminal'
 		public RuleCall getInsertembedcodeInsertEmbedCodeParserRuleCall_5_2_0() { return cInsertembedcodeInsertEmbedCodeParserRuleCall_5_2_0; }
 
-		//reference+=Reference
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.3'
 		public Assignment getReferenceAssignment_5_3() { return cReferenceAssignment_5_3; }
 
-		//Reference
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.5/@elements.3/@terminal'
 		public RuleCall getReferenceReferenceParserRuleCall_5_3_0() { return cReferenceReferenceParserRuleCall_5_3_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.11/@alternatives/@elements.6'
 		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
 	}
 
@@ -682,102 +654,94 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cInsertembedcodeInsertEmbedCodeParserRuleCall_9_1_0 = (RuleCall)cInsertembedcodeAssignment_9_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		
-		//// a relation is a constructs that:
-		//// 1) can extend other relation (only attributes are inherited from the parent relation)
-		//// 2) can contain zero or more attributes
-		//Relation:
-		//	"relation" name=ValidID ("extends" parentrelationname=[Relation|QualifiedName])? ("symbol"
-		//	symbolrelation=[SymbolRelation|QualifiedName])? "from" fromclassname=[Class|QualifiedName] "to"
-		//	toclassname=[Class|QualifiedName] "{" (attribute+=Attribute | insertembedcode+=InsertEmbedCode)* "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Relation'
 		public ParserRule getRule() { return rule; }
 
-		//"relation" name=ValidID ("extends" parentrelationname=[Relation|QualifiedName])? ("symbol"
-		//symbolrelation=[SymbolRelation|QualifiedName])? "from" fromclassname=[Class|QualifiedName] "to"
-		//toclassname=[Class|QualifiedName] "{" (attribute+=Attribute | insertembedcode+=InsertEmbedCode)* "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"relation"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.0'
 		public Keyword getRelationKeyword_0() { return cRelationKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//("extends" parentrelationname=[Relation|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.2'
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"extends"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.2/@elements.0'
 		public Keyword getExtendsKeyword_2_0() { return cExtendsKeyword_2_0; }
 
-		//parentrelationname=[Relation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.2/@elements.1'
 		public Assignment getParentrelationnameAssignment_2_1() { return cParentrelationnameAssignment_2_1; }
 
-		//[Relation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.2/@elements.1/@terminal'
 		public CrossReference getParentrelationnameRelationCrossReference_2_1_0() { return cParentrelationnameRelationCrossReference_2_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.2/@elements.1/@terminal/@terminal'
 		public RuleCall getParentrelationnameRelationQualifiedNameParserRuleCall_2_1_0_1() { return cParentrelationnameRelationQualifiedNameParserRuleCall_2_1_0_1; }
 
-		//("symbol" symbolrelation=[SymbolRelation|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.3'
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"symbol"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.3/@elements.0'
 		public Keyword getSymbolKeyword_3_0() { return cSymbolKeyword_3_0; }
 
-		//symbolrelation=[SymbolRelation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.3/@elements.1'
 		public Assignment getSymbolrelationAssignment_3_1() { return cSymbolrelationAssignment_3_1; }
 
-		//[SymbolRelation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.3/@elements.1/@terminal'
 		public CrossReference getSymbolrelationSymbolRelationCrossReference_3_1_0() { return cSymbolrelationSymbolRelationCrossReference_3_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.3/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolrelationSymbolRelationQualifiedNameParserRuleCall_3_1_0_1() { return cSymbolrelationSymbolRelationQualifiedNameParserRuleCall_3_1_0_1; }
 
-		//"from"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.4'
 		public Keyword getFromKeyword_4() { return cFromKeyword_4; }
 
-		//fromclassname=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.5'
 		public Assignment getFromclassnameAssignment_5() { return cFromclassnameAssignment_5; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.5/@terminal'
 		public CrossReference getFromclassnameClassCrossReference_5_0() { return cFromclassnameClassCrossReference_5_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.5/@terminal/@terminal'
 		public RuleCall getFromclassnameClassQualifiedNameParserRuleCall_5_0_1() { return cFromclassnameClassQualifiedNameParserRuleCall_5_0_1; }
 
-		//"to"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.6'
 		public Keyword getToKeyword_6() { return cToKeyword_6; }
 
-		//toclassname=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.7'
 		public Assignment getToclassnameAssignment_7() { return cToclassnameAssignment_7; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.7/@terminal'
 		public CrossReference getToclassnameClassCrossReference_7_0() { return cToclassnameClassCrossReference_7_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.7/@terminal/@terminal'
 		public RuleCall getToclassnameClassQualifiedNameParserRuleCall_7_0_1() { return cToclassnameClassQualifiedNameParserRuleCall_7_0_1; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.8'
 		public Keyword getLeftCurlyBracketKeyword_8() { return cLeftCurlyBracketKeyword_8; }
 
-		//(attribute+=Attribute | insertembedcode+=InsertEmbedCode)*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.9'
 		public Alternatives getAlternatives_9() { return cAlternatives_9; }
 
-		//attribute+=Attribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.9/@elements.0'
 		public Assignment getAttributeAssignment_9_0() { return cAttributeAssignment_9_0; }
 
-		//Attribute
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.9/@elements.0/@terminal'
 		public RuleCall getAttributeAttributeParserRuleCall_9_0_0() { return cAttributeAttributeParserRuleCall_9_0_0; }
 
-		//insertembedcode+=InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.9/@elements.1'
 		public Assignment getInsertembedcodeAssignment_9_1() { return cInsertembedcodeAssignment_9_1; }
 
-		//InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.9/@elements.1/@terminal'
 		public RuleCall getInsertembedcodeInsertEmbedCodeParserRuleCall_9_1_0() { return cInsertembedcodeInsertEmbedCodeParserRuleCall_9_1_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.12/@alternatives/@elements.10'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
 
@@ -796,44 +760,43 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cAccessAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
 		private final RuleCall cAccessAccessTypeEnumRuleCall_4_2_0 = (RuleCall)cAccessAssignment_4_2.eContents().get(0);
 		
-		//Attribute:
-		//	"attribute" name=ValidID ":" type=Type ("access" ":" access=AccessType)?;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Attribute'
 		public ParserRule getRule() { return rule; }
 
-		//"attribute" name=ValidID ":" type=Type ("access" ":" access=AccessType)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"attribute"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.0'
 		public Keyword getAttributeKeyword_0() { return cAttributeKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//":"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.2'
 		public Keyword getColonKeyword_2() { return cColonKeyword_2; }
 
-		//type=Type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.3'
 		public Assignment getTypeAssignment_3() { return cTypeAssignment_3; }
 
-		//Type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.3/@terminal'
 		public RuleCall getTypeTypeParserRuleCall_3_0() { return cTypeTypeParserRuleCall_3_0; }
 
-		//("access" ":" access=AccessType)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.4'
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"access"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.4/@elements.0'
 		public Keyword getAccessKeyword_4_0() { return cAccessKeyword_4_0; }
 
-		//":"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.4/@elements.1'
 		public Keyword getColonKeyword_4_1() { return cColonKeyword_4_1; }
 
-		//access=AccessType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.4/@elements.2'
 		public Assignment getAccessAssignment_4_2() { return cAccessAssignment_4_2; }
 
-		//AccessType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.13/@alternatives/@elements.4/@elements.2/@terminal'
 		public RuleCall getAccessAccessTypeEnumRuleCall_4_2_0() { return cAccessAccessTypeEnumRuleCall_4_2_0; }
 	}
 
@@ -847,29 +810,28 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cTypeAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cTypeTypeParserRuleCall_3_0 = (RuleCall)cTypeAssignment_3.eContents().get(0);
 		
-		//ClassAttribute:
-		//	"classattribute" name=ValidID ":" type=Type;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/ClassAttribute'
 		public ParserRule getRule() { return rule; }
 
-		//"classattribute" name=ValidID ":" type=Type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"classattribute"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.0'
 		public Keyword getClassattributeKeyword_0() { return cClassattributeKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//":"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.2'
 		public Keyword getColonKeyword_2() { return cColonKeyword_2; }
 
-		//type=Type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.3'
 		public Assignment getTypeAssignment_3() { return cTypeAssignment_3; }
 
-		//Type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.15/@alternatives/@elements.3/@terminal'
 		public RuleCall getTypeTypeParserRuleCall_3_0() { return cTypeTypeParserRuleCall_3_0; }
 	}
 
@@ -883,30 +845,28 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cRefnameAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cRefnameRefNameParserRuleCall_3_0 = (RuleCall)cRefnameAssignment_3.eContents().get(0);
 		
-		//// references modeling object
-		//Reference:
-		//	"reference" name=ValidID "->" refname=RefName;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Reference'
 		public ParserRule getRule() { return rule; }
 
-		//"reference" name=ValidID "->" refname=RefName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"reference"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.0'
 		public Keyword getReferenceKeyword_0() { return cReferenceKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//"->"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.2'
 		public Keyword getHyphenMinusGreaterThanSignKeyword_2() { return cHyphenMinusGreaterThanSignKeyword_2; }
 
-		//refname=RefName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.3'
 		public Assignment getRefnameAssignment_3() { return cRefnameAssignment_3; }
 
-		//RefName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.16/@alternatives/@elements.3/@terminal'
 		public RuleCall getRefnameRefNameParserRuleCall_3_0() { return cRefnameRefNameParserRuleCall_3_0; }
 	}
 
@@ -924,42 +884,40 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cClassnameClassCrossReference_1_1_0 = (CrossReference)cClassnameAssignment_1_1.eContents().get(0);
 		private final RuleCall cClassnameClassQualifiedNameParserRuleCall_1_1_0_1 = (RuleCall)cClassnameClassCrossReference_1_1_0.eContents().get(1);
 		
-		//// modeling objects that can be referenced
-		//RefName:
-		//	("modeltype" modeltypename=[ModelType|QualifiedName]) ("class" classname=[Class|QualifiedName])?;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/RefName'
 		public ParserRule getRule() { return rule; }
 
-		//("modeltype" modeltypename=[ModelType|QualifiedName]) ("class" classname=[Class|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"modeltype" modeltypename=[ModelType|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.0'
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"modeltype"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.0/@elements.0'
 		public Keyword getModeltypeKeyword_0_0() { return cModeltypeKeyword_0_0; }
 
-		//modeltypename=[ModelType|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.0/@elements.1'
 		public Assignment getModeltypenameAssignment_0_1() { return cModeltypenameAssignment_0_1; }
 
-		//[ModelType|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.0/@elements.1/@terminal'
 		public CrossReference getModeltypenameModelTypeCrossReference_0_1_0() { return cModeltypenameModelTypeCrossReference_0_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.0/@elements.1/@terminal/@terminal'
 		public RuleCall getModeltypenameModelTypeQualifiedNameParserRuleCall_0_1_0_1() { return cModeltypenameModelTypeQualifiedNameParserRuleCall_0_1_0_1; }
 
-		//("class" classname=[Class|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.1'
 		public Group getGroup_1() { return cGroup_1; }
 
-		//"class"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.1/@elements.0'
 		public Keyword getClassKeyword_1_0() { return cClassKeyword_1_0; }
 
-		//classname=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.1/@elements.1'
 		public Assignment getClassnameAssignment_1_1() { return cClassnameAssignment_1_1; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.1/@elements.1/@terminal'
 		public CrossReference getClassnameClassCrossReference_1_1_0() { return cClassnameClassCrossReference_1_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.17/@alternatives/@elements.1/@elements.1/@terminal/@terminal'
 		public RuleCall getClassnameClassQualifiedNameParserRuleCall_1_1_0_1() { return cClassnameClassQualifiedNameParserRuleCall_1_1_0_1; }
 	}
 
@@ -971,23 +929,22 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cEnumtypeAssignment_1 = (Assignment)cAlternatives.eContents().get(1);
 		private final RuleCall cEnumtypeEnumTypeParserRuleCall_1_0 = (RuleCall)cEnumtypeAssignment_1.eContents().get(0);
 		
-		//Type:
-		//	simpletype=SimpleType | enumtype=EnumType;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Type'
 		public ParserRule getRule() { return rule; }
 
-		//simpletype=SimpleType | enumtype=EnumType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.18/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//simpletype=SimpleType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.18/@alternatives/@elements.0'
 		public Assignment getSimpletypeAssignment_0() { return cSimpletypeAssignment_0; }
 
-		//SimpleType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.18/@alternatives/@elements.0/@terminal'
 		public RuleCall getSimpletypeSimpleTypeEnumRuleCall_0_0() { return cSimpletypeSimpleTypeEnumRuleCall_0_0; }
 
-		//enumtype=EnumType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.18/@alternatives/@elements.1'
 		public Assignment getEnumtypeAssignment_1() { return cEnumtypeAssignment_1; }
 
-		//EnumType
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.18/@alternatives/@elements.1/@terminal'
 		public RuleCall getEnumtypeEnumTypeParserRuleCall_1_0() { return cEnumtypeEnumTypeParserRuleCall_1_0; }
 	}
 
@@ -999,23 +956,22 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cNameEnumerationCrossReference_1_0 = (CrossReference)cNameAssignment_1.eContents().get(0);
 		private final RuleCall cNameEnumerationQualifiedNameParserRuleCall_1_0_1 = (RuleCall)cNameEnumerationCrossReference_1_0.eContents().get(1);
 		
-		//EnumType:
-		//	"enum" name=[Enumeration|QualifiedName];
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EnumType'
 		public ParserRule getRule() { return rule; }
 
-		//"enum" name=[Enumeration|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.20/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"enum"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.20/@alternatives/@elements.0'
 		public Keyword getEnumKeyword_0() { return cEnumKeyword_0; }
 
-		//name=[Enumeration|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.20/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//[Enumeration|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.20/@alternatives/@elements.1/@terminal'
 		public CrossReference getNameEnumerationCrossReference_1_0() { return cNameEnumerationCrossReference_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.20/@alternatives/@elements.1/@terminal/@terminal'
 		public RuleCall getNameEnumerationQualifiedNameParserRuleCall_1_0_1() { return cNameEnumerationQualifiedNameParserRuleCall_1_0_1; }
 	}
 
@@ -1043,75 +999,70 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cModenameModeParserRuleCall_8_1_0 = (RuleCall)cModenameAssignment_8_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_9 = (Keyword)cGroup.eContents().get(9);
 		
-		//// a modeltype contains the collection of classes and relations
-		//// it must contain at least one class
-		//ModelType:
-		//	"modeltype" name=ValidID "{" "classes" classname+=[Class|QualifiedName]+ "relations" ("none" |
-		//	relationname+=[Relation|QualifiedName]+) "modes" ("none" | modename+=Mode+) "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/ModelType'
 		public ParserRule getRule() { return rule; }
 
-		//"modeltype" name=ValidID "{" "classes" classname+=[Class|QualifiedName]+ "relations" ("none" |
-		//relationname+=[Relation|QualifiedName]+) "modes" ("none" | modename+=Mode+) "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"modeltype"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.0'
 		public Keyword getModeltypeKeyword_0() { return cModeltypeKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.2'
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//"classes"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.3'
 		public Keyword getClassesKeyword_3() { return cClassesKeyword_3; }
 
-		//classname+=[Class|QualifiedName]+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.4'
 		public Assignment getClassnameAssignment_4() { return cClassnameAssignment_4; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.4/@terminal'
 		public CrossReference getClassnameClassCrossReference_4_0() { return cClassnameClassCrossReference_4_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.4/@terminal/@terminal'
 		public RuleCall getClassnameClassQualifiedNameParserRuleCall_4_0_1() { return cClassnameClassQualifiedNameParserRuleCall_4_0_1; }
 
-		//"relations"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.5'
 		public Keyword getRelationsKeyword_5() { return cRelationsKeyword_5; }
 
-		//"none" | relationname+=[Relation|QualifiedName]+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.6'
 		public Alternatives getAlternatives_6() { return cAlternatives_6; }
 
-		//"none"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.6/@elements.0'
 		public Keyword getNoneKeyword_6_0() { return cNoneKeyword_6_0; }
 
-		//relationname+=[Relation|QualifiedName]+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.6/@elements.1'
 		public Assignment getRelationnameAssignment_6_1() { return cRelationnameAssignment_6_1; }
 
-		//[Relation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.6/@elements.1/@terminal'
 		public CrossReference getRelationnameRelationCrossReference_6_1_0() { return cRelationnameRelationCrossReference_6_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.6/@elements.1/@terminal/@terminal'
 		public RuleCall getRelationnameRelationQualifiedNameParserRuleCall_6_1_0_1() { return cRelationnameRelationQualifiedNameParserRuleCall_6_1_0_1; }
 
-		//"modes"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.7'
 		public Keyword getModesKeyword_7() { return cModesKeyword_7; }
 
-		//"none" | modename+=Mode+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.8'
 		public Alternatives getAlternatives_8() { return cAlternatives_8; }
 
-		//"none"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.8/@elements.0'
 		public Keyword getNoneKeyword_8_0() { return cNoneKeyword_8_0; }
 
-		//modename+=Mode+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.8/@elements.1'
 		public Assignment getModenameAssignment_8_1() { return cModenameAssignment_8_1; }
 
-		//Mode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.8/@elements.1/@terminal'
 		public RuleCall getModenameModeParserRuleCall_8_1_0() { return cModenameModeParserRuleCall_8_1_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.21/@alternatives/@elements.9'
 		public Keyword getRightCurlyBracketKeyword_9() { return cRightCurlyBracketKeyword_9; }
 	}
 
@@ -1134,59 +1085,55 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cRelationnameRelationCrossReference_3_3_1_0 = (CrossReference)cRelationnameAssignment_3_3_1.eContents().get(0);
 		private final RuleCall cRelationnameRelationQualifiedNameParserRuleCall_3_3_1_0_1 = (RuleCall)cRelationnameRelationCrossReference_3_3_1_0.eContents().get(1);
 		
-		//// a modeltype can contain zero or more modes aka. views in modeling canvas
-		//Mode:
-		//	"mode" name=ValidID "include" ("classes" classname+=[Class|QualifiedName]+ "relations" ("none" |
-		//	relationname+=[Relation|QualifiedName])+);
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Mode'
 		public ParserRule getRule() { return rule; }
 
-		//"mode" name=ValidID "include" ("classes" classname+=[Class|QualifiedName]+ "relations" ("none" |
-		//relationname+=[Relation|QualifiedName])+)
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"mode"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.0'
 		public Keyword getModeKeyword_0() { return cModeKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//"include"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.2'
 		public Keyword getIncludeKeyword_2() { return cIncludeKeyword_2; }
 
-		//"classes" classname+=[Class|QualifiedName]+ "relations" ("none" | relationname+=[Relation|QualifiedName])+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3'
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"classes"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.0'
 		public Keyword getClassesKeyword_3_0() { return cClassesKeyword_3_0; }
 
-		//classname+=[Class|QualifiedName]+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.1'
 		public Assignment getClassnameAssignment_3_1() { return cClassnameAssignment_3_1; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.1/@terminal'
 		public CrossReference getClassnameClassCrossReference_3_1_0() { return cClassnameClassCrossReference_3_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.1/@terminal/@terminal'
 		public RuleCall getClassnameClassQualifiedNameParserRuleCall_3_1_0_1() { return cClassnameClassQualifiedNameParserRuleCall_3_1_0_1; }
 
-		//"relations"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.2'
 		public Keyword getRelationsKeyword_3_2() { return cRelationsKeyword_3_2; }
 
-		//("none" | relationname+=[Relation|QualifiedName])+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.3'
 		public Alternatives getAlternatives_3_3() { return cAlternatives_3_3; }
 
-		//"none"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.3/@elements.0'
 		public Keyword getNoneKeyword_3_3_0() { return cNoneKeyword_3_3_0; }
 
-		//relationname+=[Relation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.3/@elements.1'
 		public Assignment getRelationnameAssignment_3_3_1() { return cRelationnameAssignment_3_3_1; }
 
-		//[Relation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.3/@elements.1/@terminal'
 		public CrossReference getRelationnameRelationCrossReference_3_3_1_0() { return cRelationnameRelationCrossReference_3_3_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.22/@alternatives/@elements.3/@elements.3/@elements.1/@terminal/@terminal'
 		public RuleCall getRelationnameRelationQualifiedNameParserRuleCall_3_3_1_0_1() { return cRelationnameRelationQualifiedNameParserRuleCall_3_3_1_0_1; }
 	}
 
@@ -1206,52 +1153,46 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cSvgcommandSVGCommandParserRuleCall_4_0 = (RuleCall)cSvgcommandAssignment_4.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
-		/// *
-		//  ********************************************* 
-		//  * Graphical Representation Grammar
-		//  *********************************************
-		//  * / // 1) classes (SymbolClass) and relations (SymbolRelation) can be visualized
-		//SymbolClass:
-		//	"classgraph" name=ValidID ("style" globalstyle=[SymbolStyle|QualifiedName])? "{" svgcommand+=SVGCommand* "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/SymbolClass'
 		public ParserRule getRule() { return rule; }
 
-		//"classgraph" name=ValidID ("style" globalstyle=[SymbolStyle|QualifiedName])? "{" svgcommand+=SVGCommand* "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"classgraph"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.0'
 		public Keyword getClassgraphKeyword_0() { return cClassgraphKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//("style" globalstyle=[SymbolStyle|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.2'
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"style"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.2/@elements.0'
 		public Keyword getStyleKeyword_2_0() { return cStyleKeyword_2_0; }
 
-		//globalstyle=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.2/@elements.1'
 		public Assignment getGlobalstyleAssignment_2_1() { return cGlobalstyleAssignment_2_1; }
 
-		//[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.2/@elements.1/@terminal'
 		public CrossReference getGlobalstyleSymbolStyleCrossReference_2_1_0() { return cGlobalstyleSymbolStyleCrossReference_2_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.2/@elements.1/@terminal/@terminal'
 		public RuleCall getGlobalstyleSymbolStyleQualifiedNameParserRuleCall_2_1_0_1() { return cGlobalstyleSymbolStyleQualifiedNameParserRuleCall_2_1_0_1; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.3'
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
 
-		//svgcommand+=SVGCommand*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.4'
 		public Assignment getSvgcommandAssignment_4() { return cSvgcommandAssignment_4; }
 
-		//SVGCommand
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.4/@terminal'
 		public RuleCall getSvgcommandSVGCommandParserRuleCall_4_0() { return cSvgcommandSVGCommandParserRuleCall_4_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.23/@alternatives/@elements.5'
 		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 
@@ -1278,70 +1219,67 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cSvgcommandstoSVGCommandParserRuleCall_9_0 = (RuleCall)cSvgcommandstoAssignment_9.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		
-		//SymbolRelation:
-		//	"relationgraph" name=ValidID ("style" globalstyle=[SymbolStyle|QualifiedName])? "{" "from"
-		//	svgcommandsfrom+=SVGCommand* "middle" svgcommandsmiddle+=SVGCommand* "to" svgcommandsto+=SVGCommand* "}";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/SymbolRelation'
 		public ParserRule getRule() { return rule; }
 
-		//"relationgraph" name=ValidID ("style" globalstyle=[SymbolStyle|QualifiedName])? "{" "from" svgcommandsfrom+=SVGCommand*
-		//"middle" svgcommandsmiddle+=SVGCommand* "to" svgcommandsto+=SVGCommand* "}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"relationgraph"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.0'
 		public Keyword getRelationgraphKeyword_0() { return cRelationgraphKeyword_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.1'
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 
-		//("style" globalstyle=[SymbolStyle|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.2'
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"style"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.2/@elements.0'
 		public Keyword getStyleKeyword_2_0() { return cStyleKeyword_2_0; }
 
-		//globalstyle=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.2/@elements.1'
 		public Assignment getGlobalstyleAssignment_2_1() { return cGlobalstyleAssignment_2_1; }
 
-		//[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.2/@elements.1/@terminal'
 		public CrossReference getGlobalstyleSymbolStyleCrossReference_2_1_0() { return cGlobalstyleSymbolStyleCrossReference_2_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.2/@elements.1/@terminal/@terminal'
 		public RuleCall getGlobalstyleSymbolStyleQualifiedNameParserRuleCall_2_1_0_1() { return cGlobalstyleSymbolStyleQualifiedNameParserRuleCall_2_1_0_1; }
 
-		//"{"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.3'
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
 
-		//"from"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.4'
 		public Keyword getFromKeyword_4() { return cFromKeyword_4; }
 
-		//svgcommandsfrom+=SVGCommand*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.5'
 		public Assignment getSvgcommandsfromAssignment_5() { return cSvgcommandsfromAssignment_5; }
 
-		//SVGCommand
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.5/@terminal'
 		public RuleCall getSvgcommandsfromSVGCommandParserRuleCall_5_0() { return cSvgcommandsfromSVGCommandParserRuleCall_5_0; }
 
-		//"middle"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.6'
 		public Keyword getMiddleKeyword_6() { return cMiddleKeyword_6; }
 
-		//svgcommandsmiddle+=SVGCommand*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.7'
 		public Assignment getSvgcommandsmiddleAssignment_7() { return cSvgcommandsmiddleAssignment_7; }
 
-		//SVGCommand
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.7/@terminal'
 		public RuleCall getSvgcommandsmiddleSVGCommandParserRuleCall_7_0() { return cSvgcommandsmiddleSVGCommandParserRuleCall_7_0; }
 
-		//"to"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.8'
 		public Keyword getToKeyword_8() { return cToKeyword_8; }
 
-		//svgcommandsto+=SVGCommand*
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.9'
 		public Assignment getSvgcommandstoAssignment_9() { return cSvgcommandstoAssignment_9; }
 
-		//SVGCommand
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.9/@terminal'
 		public RuleCall getSvgcommandstoSVGCommandParserRuleCall_9_0() { return cSvgcommandstoSVGCommandParserRuleCall_9_0; }
 
-		//"}"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.24/@alternatives/@elements.10'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
 
@@ -1377,128 +1315,94 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cSymbolstylerefSymbolStyleCrossReference_1_1_1_1_0 = (CrossReference)cSymbolstylerefAssignment_1_1_1_1.eContents().get(0);
 		private final RuleCall cSymbolstylerefSymbolStyleQualifiedNameParserRuleCall_1_1_1_1_0_1 = (RuleCall)cSymbolstylerefSymbolStyleCrossReference_1_1_1_1_0.eContents().get(1);
 		
-		//// SVG coordinate system starts with (0,0) in the top left corner
-		//// it is calculated in pixels (px)
-		/// *
-		// * (0,0)---(x, 0)
-		// *   |
-		// *   |
-		// * (0, y)
-		// * / SVGCommand:
-		//	insertembedcode=InsertEmbedCode / *
-		// * basic symbol shapes
-		// * based on SVG notation
-		// * Rectangle <rect>
-		// * Circle <circle>
-		// * Ellipse <ellipse>
-		// * Line <line>
-		// * Polyline <polyline>
-		// * Polygon <polygon>
-		// * Path <path>
-		// * Text <text>
-		// * / | (rectangle=Rectangle | circle=Circle | ellipse=Ellipse | line=Line | polyline=Polyline | polygon=Polygon |
-		//	path=Path | text=Text) (symbolstyle=SymbolStyle | "style" symbolstyleref=[SymbolStyle|QualifiedName])?;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/SVGCommand'
 		public ParserRule getRule() { return rule; }
 
-		//insertembedcode=InsertEmbedCode / *
-		// * basic symbol shapes
-		// * based on SVG notation
-		// * Rectangle <rect>
-		// * Circle <circle>
-		// * Ellipse <ellipse>
-		// * Line <line>
-		// * Polyline <polyline>
-		// * Polygon <polygon>
-		// * Path <path>
-		// * Text <text>
-		// * / | (rectangle=Rectangle | circle=Circle | ellipse=Ellipse | line=Line | polyline=Polyline | polygon=Polygon |
-		//path=Path | text=Text) (symbolstyle=SymbolStyle | "style" symbolstyleref=[SymbolStyle|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//insertembedcode=InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.0'
 		public Assignment getInsertembedcodeAssignment_0() { return cInsertembedcodeAssignment_0; }
 
-		//InsertEmbedCode
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.0/@terminal'
 		public RuleCall getInsertembedcodeInsertEmbedCodeParserRuleCall_0_0() { return cInsertembedcodeInsertEmbedCodeParserRuleCall_0_0; }
 
-		//(rectangle=Rectangle | circle=Circle | ellipse=Ellipse | line=Line | polyline=Polyline | polygon=Polygon | path=Path |
-		//text=Text) (symbolstyle=SymbolStyle | "style" symbolstyleref=[SymbolStyle|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1'
 		public Group getGroup_1() { return cGroup_1; }
 
-		//rectangle=Rectangle | circle=Circle | ellipse=Ellipse | line=Line | polyline=Polyline | polygon=Polygon | path=Path |
-		//text=Text
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0'
 		public Alternatives getAlternatives_1_0() { return cAlternatives_1_0; }
 
-		//rectangle=Rectangle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.0'
 		public Assignment getRectangleAssignment_1_0_0() { return cRectangleAssignment_1_0_0; }
 
-		//Rectangle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.0/@terminal'
 		public RuleCall getRectangleRectangleParserRuleCall_1_0_0_0() { return cRectangleRectangleParserRuleCall_1_0_0_0; }
 
-		//circle=Circle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.1'
 		public Assignment getCircleAssignment_1_0_1() { return cCircleAssignment_1_0_1; }
 
-		//Circle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.1/@terminal'
 		public RuleCall getCircleCircleParserRuleCall_1_0_1_0() { return cCircleCircleParserRuleCall_1_0_1_0; }
 
-		//ellipse=Ellipse
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.2'
 		public Assignment getEllipseAssignment_1_0_2() { return cEllipseAssignment_1_0_2; }
 
-		//Ellipse
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.2/@terminal'
 		public RuleCall getEllipseEllipseParserRuleCall_1_0_2_0() { return cEllipseEllipseParserRuleCall_1_0_2_0; }
 
-		//line=Line
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.3'
 		public Assignment getLineAssignment_1_0_3() { return cLineAssignment_1_0_3; }
 
-		//Line
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.3/@terminal'
 		public RuleCall getLineLineParserRuleCall_1_0_3_0() { return cLineLineParserRuleCall_1_0_3_0; }
 
-		//polyline=Polyline
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.4'
 		public Assignment getPolylineAssignment_1_0_4() { return cPolylineAssignment_1_0_4; }
 
-		//Polyline
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.4/@terminal'
 		public RuleCall getPolylinePolylineParserRuleCall_1_0_4_0() { return cPolylinePolylineParserRuleCall_1_0_4_0; }
 
-		//polygon=Polygon
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.5'
 		public Assignment getPolygonAssignment_1_0_5() { return cPolygonAssignment_1_0_5; }
 
-		//Polygon
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.5/@terminal'
 		public RuleCall getPolygonPolygonParserRuleCall_1_0_5_0() { return cPolygonPolygonParserRuleCall_1_0_5_0; }
 
-		//path=Path
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.6'
 		public Assignment getPathAssignment_1_0_6() { return cPathAssignment_1_0_6; }
 
-		//Path
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.6/@terminal'
 		public RuleCall getPathPathParserRuleCall_1_0_6_0() { return cPathPathParserRuleCall_1_0_6_0; }
 
-		//text=Text
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.7'
 		public Assignment getTextAssignment_1_0_7() { return cTextAssignment_1_0_7; }
 
-		//Text
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.0/@elements.7/@terminal'
 		public RuleCall getTextTextParserRuleCall_1_0_7_0() { return cTextTextParserRuleCall_1_0_7_0; }
 
-		//(symbolstyle=SymbolStyle | "style" symbolstyleref=[SymbolStyle|QualifiedName])?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1'
 		public Alternatives getAlternatives_1_1() { return cAlternatives_1_1; }
 
-		//symbolstyle=SymbolStyle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.0'
 		public Assignment getSymbolstyleAssignment_1_1_0() { return cSymbolstyleAssignment_1_1_0; }
 
-		//SymbolStyle
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.0/@terminal'
 		public RuleCall getSymbolstyleSymbolStyleParserRuleCall_1_1_0_0() { return cSymbolstyleSymbolStyleParserRuleCall_1_1_0_0; }
 
-		//"style" symbolstyleref=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.1'
 		public Group getGroup_1_1_1() { return cGroup_1_1_1; }
 
-		//"style"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.1/@elements.0'
 		public Keyword getStyleKeyword_1_1_1_0() { return cStyleKeyword_1_1_1_0; }
 
-		//symbolstyleref=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.1/@elements.1'
 		public Assignment getSymbolstylerefAssignment_1_1_1_1() { return cSymbolstylerefAssignment_1_1_1_1; }
 
-		//[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.1/@elements.1/@terminal'
 		public CrossReference getSymbolstylerefSymbolStyleCrossReference_1_1_1_1_0() { return cSymbolstylerefSymbolStyleCrossReference_1_1_1_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.25/@alternatives/@elements.1/@elements.1/@elements.1/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolstylerefSymbolStyleQualifiedNameParserRuleCall_1_1_1_1_0_1() { return cSymbolstylerefSymbolStyleQualifiedNameParserRuleCall_1_1_1_1_0_1; }
 	}
 
@@ -1523,62 +1427,61 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cHeightAssignment_12 = (Assignment)cGroup.eContents().get(12);
 		private final RuleCall cHeightNumberParserRuleCall_12_0 = (RuleCall)cHeightAssignment_12.eContents().get(0);
 		
-		//Rectangle:
-		//	"rectangle" "x" "=" x=RealNumber "y" "=" y=RealNumber "w" "=" width=Number "h" "=" height=Number;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Rectangle'
 		public ParserRule getRule() { return rule; }
 
-		//"rectangle" "x" "=" x=RealNumber "y" "=" y=RealNumber "w" "=" width=Number "h" "=" height=Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"rectangle"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.0'
 		public Keyword getRectangleKeyword_0() { return cRectangleKeyword_0; }
 
-		//"x"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.1'
 		public Keyword getXKeyword_1() { return cXKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//x=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.3'
 		public Assignment getXAssignment_3() { return cXAssignment_3; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.3/@terminal'
 		public RuleCall getXRealNumberParserRuleCall_3_0() { return cXRealNumberParserRuleCall_3_0; }
 
-		//"y"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.4'
 		public Keyword getYKeyword_4() { return cYKeyword_4; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.5'
 		public Keyword getEqualsSignKeyword_5() { return cEqualsSignKeyword_5; }
 
-		//y=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.6'
 		public Assignment getYAssignment_6() { return cYAssignment_6; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.6/@terminal'
 		public RuleCall getYRealNumberParserRuleCall_6_0() { return cYRealNumberParserRuleCall_6_0; }
 
-		//"w"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.7'
 		public Keyword getWKeyword_7() { return cWKeyword_7; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.8'
 		public Keyword getEqualsSignKeyword_8() { return cEqualsSignKeyword_8; }
 
-		//width=Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.9'
 		public Assignment getWidthAssignment_9() { return cWidthAssignment_9; }
 
-		//Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.9/@terminal'
 		public RuleCall getWidthNumberParserRuleCall_9_0() { return cWidthNumberParserRuleCall_9_0; }
 
-		//"h"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.10'
 		public Keyword getHKeyword_10() { return cHKeyword_10; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.11'
 		public Keyword getEqualsSignKeyword_11() { return cEqualsSignKeyword_11; }
 
-		//height=Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.12'
 		public Assignment getHeightAssignment_12() { return cHeightAssignment_12; }
 
-		//Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.26/@alternatives/@elements.12/@terminal'
 		public RuleCall getHeightNumberParserRuleCall_12_0() { return cHeightNumberParserRuleCall_12_0; }
 	}
 
@@ -1599,50 +1502,49 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cRAssignment_9 = (Assignment)cGroup.eContents().get(9);
 		private final RuleCall cRNumberParserRuleCall_9_0 = (RuleCall)cRAssignment_9.eContents().get(0);
 		
-		//Circle:
-		//	"circle" "cx" "=" cx=RealNumber "cy" "=" cy=RealNumber "r" "=" r=Number;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Circle'
 		public ParserRule getRule() { return rule; }
 
-		//"circle" "cx" "=" cx=RealNumber "cy" "=" cy=RealNumber "r" "=" r=Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"circle"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.0'
 		public Keyword getCircleKeyword_0() { return cCircleKeyword_0; }
 
-		//"cx"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.1'
 		public Keyword getCxKeyword_1() { return cCxKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//cx=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.3'
 		public Assignment getCxAssignment_3() { return cCxAssignment_3; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.3/@terminal'
 		public RuleCall getCxRealNumberParserRuleCall_3_0() { return cCxRealNumberParserRuleCall_3_0; }
 
-		//"cy"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.4'
 		public Keyword getCyKeyword_4() { return cCyKeyword_4; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.5'
 		public Keyword getEqualsSignKeyword_5() { return cEqualsSignKeyword_5; }
 
-		//cy=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.6'
 		public Assignment getCyAssignment_6() { return cCyAssignment_6; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.6/@terminal'
 		public RuleCall getCyRealNumberParserRuleCall_6_0() { return cCyRealNumberParserRuleCall_6_0; }
 
-		//"r"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.7'
 		public Keyword getRKeyword_7() { return cRKeyword_7; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.8'
 		public Keyword getEqualsSignKeyword_8() { return cEqualsSignKeyword_8; }
 
-		//r=Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.9'
 		public Assignment getRAssignment_9() { return cRAssignment_9; }
 
-		//Number
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.27/@alternatives/@elements.9/@terminal'
 		public RuleCall getRNumberParserRuleCall_9_0() { return cRNumberParserRuleCall_9_0; }
 	}
 
@@ -1667,62 +1569,61 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cRyAssignment_12 = (Assignment)cGroup.eContents().get(12);
 		private final RuleCall cRyRealNumberParserRuleCall_12_0 = (RuleCall)cRyAssignment_12.eContents().get(0);
 		
-		//Ellipse:
-		//	"ellipse" "cx" "=" cx=RealNumber "cy" "=" cy=RealNumber "rx" "=" rx=RealNumber "ry" "=" ry=RealNumber;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Ellipse'
 		public ParserRule getRule() { return rule; }
 
-		//"ellipse" "cx" "=" cx=RealNumber "cy" "=" cy=RealNumber "rx" "=" rx=RealNumber "ry" "=" ry=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"ellipse"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.0'
 		public Keyword getEllipseKeyword_0() { return cEllipseKeyword_0; }
 
-		//"cx"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.1'
 		public Keyword getCxKeyword_1() { return cCxKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//cx=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.3'
 		public Assignment getCxAssignment_3() { return cCxAssignment_3; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.3/@terminal'
 		public RuleCall getCxRealNumberParserRuleCall_3_0() { return cCxRealNumberParserRuleCall_3_0; }
 
-		//"cy"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.4'
 		public Keyword getCyKeyword_4() { return cCyKeyword_4; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.5'
 		public Keyword getEqualsSignKeyword_5() { return cEqualsSignKeyword_5; }
 
-		//cy=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.6'
 		public Assignment getCyAssignment_6() { return cCyAssignment_6; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.6/@terminal'
 		public RuleCall getCyRealNumberParserRuleCall_6_0() { return cCyRealNumberParserRuleCall_6_0; }
 
-		//"rx"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.7'
 		public Keyword getRxKeyword_7() { return cRxKeyword_7; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.8'
 		public Keyword getEqualsSignKeyword_8() { return cEqualsSignKeyword_8; }
 
-		//rx=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.9'
 		public Assignment getRxAssignment_9() { return cRxAssignment_9; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.9/@terminal'
 		public RuleCall getRxRealNumberParserRuleCall_9_0() { return cRxRealNumberParserRuleCall_9_0; }
 
-		//"ry"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.10'
 		public Keyword getRyKeyword_10() { return cRyKeyword_10; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.11'
 		public Keyword getEqualsSignKeyword_11() { return cEqualsSignKeyword_11; }
 
-		//ry=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.12'
 		public Assignment getRyAssignment_12() { return cRyAssignment_12; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.28/@alternatives/@elements.12/@terminal'
 		public RuleCall getRyRealNumberParserRuleCall_12_0() { return cRyRealNumberParserRuleCall_12_0; }
 	}
 
@@ -1747,62 +1648,61 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cY2Assignment_12 = (Assignment)cGroup.eContents().get(12);
 		private final RuleCall cY2RealNumberParserRuleCall_12_0 = (RuleCall)cY2Assignment_12.eContents().get(0);
 		
-		//Line:
-		//	"line" "x1" "=" x1=RealNumber "y1" "=" y1=RealNumber "x2" "=" x2=RealNumber "y2" "=" y2=RealNumber;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Line'
 		public ParserRule getRule() { return rule; }
 
-		//"line" "x1" "=" x1=RealNumber "y1" "=" y1=RealNumber "x2" "=" x2=RealNumber "y2" "=" y2=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"line"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.0'
 		public Keyword getLineKeyword_0() { return cLineKeyword_0; }
 
-		//"x1"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.1'
 		public Keyword getX1Keyword_1() { return cX1Keyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//x1=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.3'
 		public Assignment getX1Assignment_3() { return cX1Assignment_3; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.3/@terminal'
 		public RuleCall getX1RealNumberParserRuleCall_3_0() { return cX1RealNumberParserRuleCall_3_0; }
 
-		//"y1"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.4'
 		public Keyword getY1Keyword_4() { return cY1Keyword_4; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.5'
 		public Keyword getEqualsSignKeyword_5() { return cEqualsSignKeyword_5; }
 
-		//y1=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.6'
 		public Assignment getY1Assignment_6() { return cY1Assignment_6; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.6/@terminal'
 		public RuleCall getY1RealNumberParserRuleCall_6_0() { return cY1RealNumberParserRuleCall_6_0; }
 
-		//"x2"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.7'
 		public Keyword getX2Keyword_7() { return cX2Keyword_7; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.8'
 		public Keyword getEqualsSignKeyword_8() { return cEqualsSignKeyword_8; }
 
-		//x2=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.9'
 		public Assignment getX2Assignment_9() { return cX2Assignment_9; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.9/@terminal'
 		public RuleCall getX2RealNumberParserRuleCall_9_0() { return cX2RealNumberParserRuleCall_9_0; }
 
-		//"y2"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.10'
 		public Keyword getY2Keyword_10() { return cY2Keyword_10; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.11'
 		public Keyword getEqualsSignKeyword_11() { return cEqualsSignKeyword_11; }
 
-		//y2=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.12'
 		public Assignment getY2Assignment_12() { return cY2Assignment_12; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.29/@alternatives/@elements.12/@terminal'
 		public RuleCall getY2RealNumberParserRuleCall_12_0() { return cY2RealNumberParserRuleCall_12_0; }
 	}
 
@@ -1815,27 +1715,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cPointsAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cPointsPointsParserRuleCall_3_0 = (RuleCall)cPointsAssignment_3.eContents().get(0);
 		
-		//Polyline:
-		//	"polyline" "points" "=" points+=Points+ // format x1,y1 x2,y2 ... xn,yn
-		//;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Polyline'
 		public ParserRule getRule() { return rule; }
 
-		//"polyline" "points" "=" points+=Points+ // format x1,y1 x2,y2 ... xn,yn
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"polyline"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives/@elements.0'
 		public Keyword getPolylineKeyword_0() { return cPolylineKeyword_0; }
 
-		//"points"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives/@elements.1'
 		public Keyword getPointsKeyword_1() { return cPointsKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//points+=Points+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives/@elements.3'
 		public Assignment getPointsAssignment_3() { return cPointsAssignment_3; }
 
-		//Points
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.30/@alternatives/@elements.3/@terminal'
 		public RuleCall getPointsPointsParserRuleCall_3_0() { return cPointsPointsParserRuleCall_3_0; }
 	}
 
@@ -1848,27 +1746,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cPointsAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cPointsPointsParserRuleCall_3_0 = (RuleCall)cPointsAssignment_3.eContents().get(0);
 		
-		//Polygon:
-		//	"polygon" "points" "=" points+=Points+ // format x1,y1 x2,y2 ... xn,yn
-		//;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Polygon'
 		public ParserRule getRule() { return rule; }
 
-		//"polygon" "points" "=" points+=Points+ // format x1,y1 x2,y2 ... xn,yn
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"polygon"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives/@elements.0'
 		public Keyword getPolygonKeyword_0() { return cPolygonKeyword_0; }
 
-		//"points"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives/@elements.1'
 		public Keyword getPointsKeyword_1() { return cPointsKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//points+=Points+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives/@elements.3'
 		public Assignment getPointsAssignment_3() { return cPointsAssignment_3; }
 
-		//Points
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.31/@alternatives/@elements.3/@terminal'
 		public RuleCall getPointsPointsParserRuleCall_3_0() { return cPointsPointsParserRuleCall_3_0; }
 	}
 
@@ -1881,26 +1777,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cPathdataAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cPathdataPathDataParserRuleCall_3_0 = (RuleCall)cPathdataAssignment_3.eContents().get(0);
 		
-		//Path:
-		//	"path" "d" "=" pathdata+=PathData+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Path'
 		public ParserRule getRule() { return rule; }
 
-		//"path" "d" "=" pathdata+=PathData+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"path"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives/@elements.0'
 		public Keyword getPathKeyword_0() { return cPathKeyword_0; }
 
-		//"d"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives/@elements.1'
 		public Keyword getDKeyword_1() { return cDKeyword_1; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives/@elements.2'
 		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
 
-		//pathdata+=PathData+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives/@elements.3'
 		public Assignment getPathdataAssignment_3() { return cPathdataAssignment_3; }
 
-		//PathData
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.32/@alternatives/@elements.3/@terminal'
 		public RuleCall getPathdataPathDataParserRuleCall_3_0() { return cPathdataPathDataParserRuleCall_3_0; }
 	}
 
@@ -1934,91 +1829,88 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cFillcolorAssignment_10_2 = (Assignment)cGroup_10.eContents().get(2);
 		private final RuleCall cFillcolorFillColorParserRuleCall_10_2_0 = (RuleCall)cFillcolorAssignment_10_2.eContents().get(0);
 		
-		//Text:
-		//	"text" value=STRING "x" "=" x=RealNumber "y" "=" y=RealNumber ("font-family" "=" fontfamily=FontFamily)? ("font-size"
-		//	"=" fontsize=FontSize)? ("fill" "=" fillcolor=FillColor)?;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Text'
 		public ParserRule getRule() { return rule; }
 
-		//"text" value=STRING "x" "=" x=RealNumber "y" "=" y=RealNumber ("font-family" "=" fontfamily=FontFamily)? ("font-size"
-		//"=" fontsize=FontSize)? ("fill" "=" fillcolor=FillColor)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"text"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.0'
 		public Keyword getTextKeyword_0() { return cTextKeyword_0; }
 
-		//value=STRING
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.1'
 		public Assignment getValueAssignment_1() { return cValueAssignment_1; }
 
-		//STRING
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.1/@terminal'
 		public RuleCall getValueSTRINGTerminalRuleCall_1_0() { return cValueSTRINGTerminalRuleCall_1_0; }
 
-		//"x"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.2'
 		public Keyword getXKeyword_2() { return cXKeyword_2; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.3'
 		public Keyword getEqualsSignKeyword_3() { return cEqualsSignKeyword_3; }
 
-		//x=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.4'
 		public Assignment getXAssignment_4() { return cXAssignment_4; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.4/@terminal'
 		public RuleCall getXRealNumberParserRuleCall_4_0() { return cXRealNumberParserRuleCall_4_0; }
 
-		//"y"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.5'
 		public Keyword getYKeyword_5() { return cYKeyword_5; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.6'
 		public Keyword getEqualsSignKeyword_6() { return cEqualsSignKeyword_6; }
 
-		//y=RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.7'
 		public Assignment getYAssignment_7() { return cYAssignment_7; }
 
-		//RealNumber
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.7/@terminal'
 		public RuleCall getYRealNumberParserRuleCall_7_0() { return cYRealNumberParserRuleCall_7_0; }
 
-		//("font-family" "=" fontfamily=FontFamily)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.8'
 		public Group getGroup_8() { return cGroup_8; }
 
-		//"font-family"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.8/@elements.0'
 		public Keyword getFontFamilyKeyword_8_0() { return cFontFamilyKeyword_8_0; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.8/@elements.1'
 		public Keyword getEqualsSignKeyword_8_1() { return cEqualsSignKeyword_8_1; }
 
-		//fontfamily=FontFamily
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.8/@elements.2'
 		public Assignment getFontfamilyAssignment_8_2() { return cFontfamilyAssignment_8_2; }
 
-		//FontFamily
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.8/@elements.2/@terminal'
 		public RuleCall getFontfamilyFontFamilyParserRuleCall_8_2_0() { return cFontfamilyFontFamilyParserRuleCall_8_2_0; }
 
-		//("font-size" "=" fontsize=FontSize)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.9'
 		public Group getGroup_9() { return cGroup_9; }
 
-		//"font-size"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.9/@elements.0'
 		public Keyword getFontSizeKeyword_9_0() { return cFontSizeKeyword_9_0; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.9/@elements.1'
 		public Keyword getEqualsSignKeyword_9_1() { return cEqualsSignKeyword_9_1; }
 
-		//fontsize=FontSize
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.9/@elements.2'
 		public Assignment getFontsizeAssignment_9_2() { return cFontsizeAssignment_9_2; }
 
-		//FontSize
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.9/@elements.2/@terminal'
 		public RuleCall getFontsizeFontSizeParserRuleCall_9_2_0() { return cFontsizeFontSizeParserRuleCall_9_2_0; }
 
-		//("fill" "=" fillcolor=FillColor)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.10'
 		public Group getGroup_10() { return cGroup_10; }
 
-		//"fill"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.10/@elements.0'
 		public Keyword getFillKeyword_10_0() { return cFillKeyword_10_0; }
 
-		//"="
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.10/@elements.1'
 		public Keyword getEqualsSignKeyword_10_1() { return cEqualsSignKeyword_10_1; }
 
-		//fillcolor=FillColor
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.10/@elements.2'
 		public Assignment getFillcolorAssignment_10_2() { return cFillcolorAssignment_10_2; }
 
-		//FillColor
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.33/@alternatives/@elements.10/@elements.2/@terminal'
 		public RuleCall getFillcolorFillColorParserRuleCall_10_2_0() { return cFillcolorFillColorParserRuleCall_10_2_0; }
 	}
 
@@ -2046,113 +1938,70 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cClosepathAssignment_9 = (Assignment)cAlternatives.eContents().get(9);
 		private final RuleCall cClosepathClosePathParserRuleCall_9_0 = (RuleCall)cClosepathAssignment_9.eContents().get(0);
 		
-		//PathData: / *  
-		//    M=moveto
-		//    L=lineto
-		//    H=horizontal lineto
-		//    V=vertical lineto
-		//    C=curveto
-		//    S=smooth curveto
-		//    Q=quadratic Bézier curve
-		//    T=smooth quadratic Bézier curveto
-		//    A=elliptical Arc
-		//    Z=closepath
-		// * / // All of the commands above can also be expressed with lower letters.
-		//// Capital letters means absolutely positioned, lower cases means relatively positioned.
-		//	moveto=MoveTo | lineto=LineTo | horizontallineto=HorizontalLineTo | verticallineto=VerticalLineTo | curveto=CurveTo |
-		//	smoothcurveto=SmoothCurveTo | quadraticbeziercurve=QuadraticBezierCurve |
-		//	smoothquadraticbeziercurveto=SmoothQuadraticBezierCurveTo | ellipticalarc=EllipticalArc | closepath=ClosePath;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/PathData'
 		public ParserRule getRule() { return rule; }
 
-		/// *  
-		//    M=moveto
-		//    L=lineto
-		//    H=horizontal lineto
-		//    V=vertical lineto
-		//    C=curveto
-		//    S=smooth curveto
-		//    Q=quadratic Bézier curve
-		//    T=smooth quadratic Bézier curveto
-		//    A=elliptical Arc
-		//    Z=closepath
-		// * / // All of the commands above can also be expressed with lower letters.
-		//// Capital letters means absolutely positioned, lower cases means relatively positioned.
-		//moveto=MoveTo | lineto=LineTo | horizontallineto=HorizontalLineTo | verticallineto=VerticalLineTo | curveto=CurveTo |
-		//smoothcurveto=SmoothCurveTo | quadraticbeziercurve=QuadraticBezierCurve |
-		//smoothquadraticbeziercurveto=SmoothQuadraticBezierCurveTo | ellipticalarc=EllipticalArc | closepath=ClosePath
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		/// *  
-		//    M=moveto
-		//    L=lineto
-		//    H=horizontal lineto
-		//    V=vertical lineto
-		//    C=curveto
-		//    S=smooth curveto
-		//    Q=quadratic Bézier curve
-		//    T=smooth quadratic Bézier curveto
-		//    A=elliptical Arc
-		//    Z=closepath
-		// * / // All of the commands above can also be expressed with lower letters.
-		//// Capital letters means absolutely positioned, lower cases means relatively positioned.
-		//moveto=MoveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.0'
 		public Assignment getMovetoAssignment_0() { return cMovetoAssignment_0; }
 
-		//MoveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.0/@terminal'
 		public RuleCall getMovetoMoveToParserRuleCall_0_0() { return cMovetoMoveToParserRuleCall_0_0; }
 
-		//lineto=LineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.1'
 		public Assignment getLinetoAssignment_1() { return cLinetoAssignment_1; }
 
-		//LineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.1/@terminal'
 		public RuleCall getLinetoLineToParserRuleCall_1_0() { return cLinetoLineToParserRuleCall_1_0; }
 
-		//horizontallineto=HorizontalLineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.2'
 		public Assignment getHorizontallinetoAssignment_2() { return cHorizontallinetoAssignment_2; }
 
-		//HorizontalLineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.2/@terminal'
 		public RuleCall getHorizontallinetoHorizontalLineToParserRuleCall_2_0() { return cHorizontallinetoHorizontalLineToParserRuleCall_2_0; }
 
-		//verticallineto=VerticalLineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.3'
 		public Assignment getVerticallinetoAssignment_3() { return cVerticallinetoAssignment_3; }
 
-		//VerticalLineTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.3/@terminal'
 		public RuleCall getVerticallinetoVerticalLineToParserRuleCall_3_0() { return cVerticallinetoVerticalLineToParserRuleCall_3_0; }
 
-		//curveto=CurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.4'
 		public Assignment getCurvetoAssignment_4() { return cCurvetoAssignment_4; }
 
-		//CurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.4/@terminal'
 		public RuleCall getCurvetoCurveToParserRuleCall_4_0() { return cCurvetoCurveToParserRuleCall_4_0; }
 
-		//smoothcurveto=SmoothCurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.5'
 		public Assignment getSmoothcurvetoAssignment_5() { return cSmoothcurvetoAssignment_5; }
 
-		//SmoothCurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.5/@terminal'
 		public RuleCall getSmoothcurvetoSmoothCurveToParserRuleCall_5_0() { return cSmoothcurvetoSmoothCurveToParserRuleCall_5_0; }
 
-		//quadraticbeziercurve=QuadraticBezierCurve
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.6'
 		public Assignment getQuadraticbeziercurveAssignment_6() { return cQuadraticbeziercurveAssignment_6; }
 
-		//QuadraticBezierCurve
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.6/@terminal'
 		public RuleCall getQuadraticbeziercurveQuadraticBezierCurveParserRuleCall_6_0() { return cQuadraticbeziercurveQuadraticBezierCurveParserRuleCall_6_0; }
 
-		//smoothquadraticbeziercurveto=SmoothQuadraticBezierCurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.7'
 		public Assignment getSmoothquadraticbeziercurvetoAssignment_7() { return cSmoothquadraticbeziercurvetoAssignment_7; }
 
-		//SmoothQuadraticBezierCurveTo
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.7/@terminal'
 		public RuleCall getSmoothquadraticbeziercurvetoSmoothQuadraticBezierCurveToParserRuleCall_7_0() { return cSmoothquadraticbeziercurvetoSmoothQuadraticBezierCurveToParserRuleCall_7_0; }
 
-		//ellipticalarc=EllipticalArc
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.8'
 		public Assignment getEllipticalarcAssignment_8() { return cEllipticalarcAssignment_8; }
 
-		//EllipticalArc
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.8/@terminal'
 		public RuleCall getEllipticalarcEllipticalArcParserRuleCall_8_0() { return cEllipticalarcEllipticalArcParserRuleCall_8_0; }
 
-		//closepath=ClosePath
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.9'
 		public Assignment getClosepathAssignment_9() { return cClosepathAssignment_9; }
 
-		//ClosePath
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.34/@alternatives/@elements.9/@terminal'
 		public RuleCall getClosepathClosePathParserRuleCall_9_0() { return cClosepathClosePathParserRuleCall_9_0; }
 	}
 
@@ -2165,26 +2014,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersMLTParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//MoveTo:
-		//	("M" | "m") parameters+=PathParametersMLT+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/MoveTo'
 		public ParserRule getRule() { return rule; }
 
-		//("M" | "m") parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"M" | "m"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"M"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives/@elements.0/@elements.0'
 		public Keyword getMKeyword_0_0() { return cMKeyword_0_0; }
 
-		//"m"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives/@elements.0/@elements.1'
 		public Keyword getMKeyword_0_1() { return cMKeyword_0_1; }
 
-		//parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersMLT
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.35/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersMLTParserRuleCall_1_0() { return cParametersPathParametersMLTParserRuleCall_1_0; }
 	}
 
@@ -2197,26 +2045,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersMLTParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//LineTo:
-		//	("L" | "l") parameters+=PathParametersMLT+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/LineTo'
 		public ParserRule getRule() { return rule; }
 
-		//("L" | "l") parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"L" | "l"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"L"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives/@elements.0/@elements.0'
 		public Keyword getLKeyword_0_0() { return cLKeyword_0_0; }
 
-		//"l"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives/@elements.0/@elements.1'
 		public Keyword getLKeyword_0_1() { return cLKeyword_0_1; }
 
-		//parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersMLT
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.36/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersMLTParserRuleCall_1_0() { return cParametersPathParametersMLTParserRuleCall_1_0; }
 	}
 
@@ -2229,26 +2076,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersHVParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//HorizontalLineTo:
-		//	("H" | "h") parameters+=PathParametersHV+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/HorizontalLineTo'
 		public ParserRule getRule() { return rule; }
 
-		//("H" | "h") parameters+=PathParametersHV+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"H" | "h"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"H"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives/@elements.0/@elements.0'
 		public Keyword getHKeyword_0_0() { return cHKeyword_0_0; }
 
-		//"h"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives/@elements.0/@elements.1'
 		public Keyword getHKeyword_0_1() { return cHKeyword_0_1; }
 
-		//parameters+=PathParametersHV+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersHV
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.37/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersHVParserRuleCall_1_0() { return cParametersPathParametersHVParserRuleCall_1_0; }
 	}
 
@@ -2261,26 +2107,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersHVParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//VerticalLineTo:
-		//	("V" | "v") parameters+=PathParametersHV+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/VerticalLineTo'
 		public ParserRule getRule() { return rule; }
 
-		//("V" | "v") parameters+=PathParametersHV+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"V" | "v"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"V"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives/@elements.0/@elements.0'
 		public Keyword getVKeyword_0_0() { return cVKeyword_0_0; }
 
-		//"v"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives/@elements.0/@elements.1'
 		public Keyword getVKeyword_0_1() { return cVKeyword_0_1; }
 
-		//parameters+=PathParametersHV+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersHV
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.38/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersHVParserRuleCall_1_0() { return cParametersPathParametersHVParserRuleCall_1_0; }
 	}
 
@@ -2293,26 +2138,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersCParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//CurveTo:
-		//	("C" | "c") parameters+=PathParametersC+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/CurveTo'
 		public ParserRule getRule() { return rule; }
 
-		//("C" | "c") parameters+=PathParametersC+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"C" | "c"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"C"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives/@elements.0/@elements.0'
 		public Keyword getCKeyword_0_0() { return cCKeyword_0_0; }
 
-		//"c"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives/@elements.0/@elements.1'
 		public Keyword getCKeyword_0_1() { return cCKeyword_0_1; }
 
-		//parameters+=PathParametersC+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersC
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.39/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersCParserRuleCall_1_0() { return cParametersPathParametersCParserRuleCall_1_0; }
 	}
 
@@ -2325,26 +2169,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersSParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//SmoothCurveTo:
-		//	("S" | "s") parameters+=PathParametersS+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/SmoothCurveTo'
 		public ParserRule getRule() { return rule; }
 
-		//("S" | "s") parameters+=PathParametersS+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"S" | "s"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"S"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives/@elements.0/@elements.0'
 		public Keyword getSKeyword_0_0() { return cSKeyword_0_0; }
 
-		//"s"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives/@elements.0/@elements.1'
 		public Keyword getSKeyword_0_1() { return cSKeyword_0_1; }
 
-		//parameters+=PathParametersS+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersS
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.40/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersSParserRuleCall_1_0() { return cParametersPathParametersSParserRuleCall_1_0; }
 	}
 
@@ -2357,26 +2200,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersQParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//QuadraticBezierCurve:
-		//	("Q" | "q") parameters+=PathParametersQ+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/QuadraticBezierCurve'
 		public ParserRule getRule() { return rule; }
 
-		//("Q" | "q") parameters+=PathParametersQ+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"Q" | "q"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"Q"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives/@elements.0/@elements.0'
 		public Keyword getQKeyword_0_0() { return cQKeyword_0_0; }
 
-		//"q"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives/@elements.0/@elements.1'
 		public Keyword getQKeyword_0_1() { return cQKeyword_0_1; }
 
-		//parameters+=PathParametersQ+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersQ
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.41/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersQParserRuleCall_1_0() { return cParametersPathParametersQParserRuleCall_1_0; }
 	}
 
@@ -2389,26 +2231,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersMLTParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//SmoothQuadraticBezierCurveTo:
-		//	("T" | "t") parameters+=PathParametersMLT+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/SmoothQuadraticBezierCurveTo'
 		public ParserRule getRule() { return rule; }
 
-		//("T" | "t") parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"T" | "t"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"T"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives/@elements.0/@elements.0'
 		public Keyword getTKeyword_0_0() { return cTKeyword_0_0; }
 
-		//"t"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives/@elements.0/@elements.1'
 		public Keyword getTKeyword_0_1() { return cTKeyword_0_1; }
 
-		//parameters+=PathParametersMLT+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersMLT
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.42/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersMLTParserRuleCall_1_0() { return cParametersPathParametersMLTParserRuleCall_1_0; }
 	}
 
@@ -2421,26 +2262,25 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cParametersAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cParametersPathParametersAParserRuleCall_1_0 = (RuleCall)cParametersAssignment_1.eContents().get(0);
 		
-		//EllipticalArc:
-		//	("A" | "a") parameters+=PathParametersA+;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EllipticalArc'
 		public ParserRule getRule() { return rule; }
 
-		//("A" | "a") parameters+=PathParametersA+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives'
 		public Group getGroup() { return cGroup; }
 
-		//"A" | "a"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives/@elements.0'
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//"A"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives/@elements.0/@elements.0'
 		public Keyword getAKeyword_0_0() { return cAKeyword_0_0; }
 
-		//"a"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives/@elements.0/@elements.1'
 		public Keyword getAKeyword_0_1() { return cAKeyword_0_1; }
 
-		//parameters+=PathParametersA+
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives/@elements.1'
 		public Assignment getParametersAssignment_1() { return cParametersAssignment_1; }
 
-		//PathParametersA
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.43/@alternatives/@elements.1/@terminal'
 		public RuleCall getParametersPathParametersAParserRuleCall_1_0() { return cParametersPathParametersAParserRuleCall_1_0; }
 	}
 
@@ -2450,17 +2290,16 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cZKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
 		private final Keyword cZKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
 		
-		//ClosePath:
-		//	"Z" | "z";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/ClosePath'
 		public ParserRule getRule() { return rule; }
 
-		//"Z" | "z"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.44/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//"Z"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.44/@alternatives/@elements.0'
 		public Keyword getZKeyword_0() { return cZKeyword_0; }
 
-		//"z"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.44/@alternatives/@elements.1'
 		public Keyword getZKeyword_1() { return cZKeyword_1; }
 	}
 
@@ -3457,7 +3296,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		//continue="continue"
 		public Assignment getContinueAssignment_1() { return cContinueAssignment_1; }
 
-		//"continue"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.66/@alternatives/@elements.1/@terminal'
 		public Keyword getContinueContinueKeyword_1_0() { return cContinueContinueKeyword_1_0; }
 	}
 
@@ -3482,65 +3321,61 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cVarstatementAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final RuleCall cVarstatementVarStatementParserRuleCall_1_2_0 = (RuleCall)cVarstatementAssignment_1_2.eContents().get(0);
 		
-		//// variable declaration and initialization
-		//Variable:
-		//	"var" name=ValidID (opassing=OperatorAssign varstatement=VarStatement)? | variable=[Variable|QualifiedName]
-		//	opassing=OperatorAssign varstatement=VarStatement;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Variable'
 		public ParserRule getRule() { return rule; }
 
-		//"var" name=ValidID (opassing=OperatorAssign varstatement=VarStatement)? | variable=[Variable|QualifiedName]
-		//opassing=OperatorAssign varstatement=VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//"var" name=ValidID (opassing=OperatorAssign varstatement=VarStatement)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0'
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"var"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.0'
 		public Keyword getVarKeyword_0_0() { return cVarKeyword_0_0; }
 
-		//name=ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.1'
 		public Assignment getNameAssignment_0_1() { return cNameAssignment_0_1; }
 
-		//ValidID
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.1/@terminal'
 		public RuleCall getNameValidIDParserRuleCall_0_1_0() { return cNameValidIDParserRuleCall_0_1_0; }
 
-		//(opassing=OperatorAssign varstatement=VarStatement)?
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.2'
 		public Group getGroup_0_2() { return cGroup_0_2; }
 
-		//opassing=OperatorAssign
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.2/@elements.0'
 		public Assignment getOpassingAssignment_0_2_0() { return cOpassingAssignment_0_2_0; }
 
-		//OperatorAssign
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.2/@elements.0/@terminal'
 		public RuleCall getOpassingOperatorAssignParserRuleCall_0_2_0_0() { return cOpassingOperatorAssignParserRuleCall_0_2_0_0; }
 
-		//varstatement=VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.2/@elements.1'
 		public Assignment getVarstatementAssignment_0_2_1() { return cVarstatementAssignment_0_2_1; }
 
-		//VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.0/@elements.2/@elements.1/@terminal'
 		public RuleCall getVarstatementVarStatementParserRuleCall_0_2_1_0() { return cVarstatementVarStatementParserRuleCall_0_2_1_0; }
 
-		//variable=[Variable|QualifiedName] opassing=OperatorAssign varstatement=VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1'
 		public Group getGroup_1() { return cGroup_1; }
 
-		//variable=[Variable|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.0'
 		public Assignment getVariableAssignment_1_0() { return cVariableAssignment_1_0; }
 
-		//[Variable|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.0/@terminal'
 		public CrossReference getVariableVariableCrossReference_1_0_0() { return cVariableVariableCrossReference_1_0_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.0/@terminal/@terminal'
 		public RuleCall getVariableVariableQualifiedNameParserRuleCall_1_0_0_1() { return cVariableVariableQualifiedNameParserRuleCall_1_0_0_1; }
 
-		//opassing=OperatorAssign
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.1'
 		public Assignment getOpassingAssignment_1_1() { return cOpassingAssignment_1_1; }
 
-		//OperatorAssign
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.1/@terminal'
 		public RuleCall getOpassingOperatorAssignParserRuleCall_1_1_0() { return cOpassingOperatorAssignParserRuleCall_1_1_0; }
 
-		//varstatement=VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.2'
 		public Assignment getVarstatementAssignment_1_2() { return cVarstatementAssignment_1_2; }
 
-		//VarStatement
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.67/@alternatives/@elements.1/@elements.2/@terminal'
 		public RuleCall getVarstatementVarStatementParserRuleCall_1_2_0() { return cVarstatementVarStatementParserRuleCall_1_2_0; }
 	}
 
@@ -3592,140 +3427,130 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cModeltypeModelTypeCrossReference_9_1_0 = (CrossReference)cModeltypeAssignment_9_1.eContents().get(0);
 		private final RuleCall cModeltypeModelTypeQualifiedNameParserRuleCall_9_1_0_1 = (RuleCall)cModeltypeModelTypeCrossReference_9_1_0.eContents().get(1);
 		
-		//// list of statements that can be used as variable assignments
-		//VarStatement:
-		//	expression=Expr | algorithmoperation=AlgorithmOperation | "class" class=[Class|QualifiedName] | "attribute"
-		//	attribute=[Attribute|QualifiedName] | "reference" reference=[Reference|QualifiedName] | "symbolclass"
-		//	symbolclass=[SymbolClass|QualifiedName] | "symbolrelation" symbolrelation=[SymbolRelation|QualifiedName] |
-		//	"symbolstyle" symbolstyle=[SymbolStyle|QualifiedName] | "embedded" embeddedcode=[EmbedCode|QualifiedName] |
-		//	"modeltype" modeltype=[ModelType|QualifiedName];
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/VarStatement'
 		public ParserRule getRule() { return rule; }
 
-		//expression=Expr | algorithmoperation=AlgorithmOperation | "class" class=[Class|QualifiedName] | "attribute"
-		//attribute=[Attribute|QualifiedName] | "reference" reference=[Reference|QualifiedName] | "symbolclass"
-		//symbolclass=[SymbolClass|QualifiedName] | "symbolrelation" symbolrelation=[SymbolRelation|QualifiedName] |
-		//"symbolstyle" symbolstyle=[SymbolStyle|QualifiedName] | "embedded" embeddedcode=[EmbedCode|QualifiedName] |
-		//"modeltype" modeltype=[ModelType|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//expression=Expr
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.0'
 		public Assignment getExpressionAssignment_0() { return cExpressionAssignment_0; }
 
-		//Expr
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.0/@terminal'
 		public RuleCall getExpressionExprParserRuleCall_0_0() { return cExpressionExprParserRuleCall_0_0; }
 
-		//algorithmoperation=AlgorithmOperation
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.1'
 		public Assignment getAlgorithmoperationAssignment_1() { return cAlgorithmoperationAssignment_1; }
 
-		//AlgorithmOperation
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.1/@terminal'
 		public RuleCall getAlgorithmoperationAlgorithmOperationParserRuleCall_1_0() { return cAlgorithmoperationAlgorithmOperationParserRuleCall_1_0; }
 
-		//"class" class=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.2'
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"class"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.2/@elements.0'
 		public Keyword getClassKeyword_2_0() { return cClassKeyword_2_0; }
 
-		//class=[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.2/@elements.1'
 		public Assignment getClassAssignment_2_1() { return cClassAssignment_2_1; }
 
-		//[Class|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.2/@elements.1/@terminal'
 		public CrossReference getClassClassCrossReference_2_1_0() { return cClassClassCrossReference_2_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.2/@elements.1/@terminal/@terminal'
 		public RuleCall getClassClassQualifiedNameParserRuleCall_2_1_0_1() { return cClassClassQualifiedNameParserRuleCall_2_1_0_1; }
 
-		//"attribute" attribute=[Attribute|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.3'
 		public Group getGroup_3() { return cGroup_3; }
 
-		//"attribute"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.3/@elements.0'
 		public Keyword getAttributeKeyword_3_0() { return cAttributeKeyword_3_0; }
 
-		//attribute=[Attribute|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.3/@elements.1'
 		public Assignment getAttributeAssignment_3_1() { return cAttributeAssignment_3_1; }
 
-		//[Attribute|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.3/@elements.1/@terminal'
 		public CrossReference getAttributeAttributeCrossReference_3_1_0() { return cAttributeAttributeCrossReference_3_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.3/@elements.1/@terminal/@terminal'
 		public RuleCall getAttributeAttributeQualifiedNameParserRuleCall_3_1_0_1() { return cAttributeAttributeQualifiedNameParserRuleCall_3_1_0_1; }
 
-		//"reference" reference=[Reference|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.4'
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"reference"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.4/@elements.0'
 		public Keyword getReferenceKeyword_4_0() { return cReferenceKeyword_4_0; }
 
-		//reference=[Reference|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.4/@elements.1'
 		public Assignment getReferenceAssignment_4_1() { return cReferenceAssignment_4_1; }
 
-		//[Reference|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.4/@elements.1/@terminal'
 		public CrossReference getReferenceReferenceCrossReference_4_1_0() { return cReferenceReferenceCrossReference_4_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.4/@elements.1/@terminal/@terminal'
 		public RuleCall getReferenceReferenceQualifiedNameParserRuleCall_4_1_0_1() { return cReferenceReferenceQualifiedNameParserRuleCall_4_1_0_1; }
 
-		//"symbolclass" symbolclass=[SymbolClass|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.5'
 		public Group getGroup_5() { return cGroup_5; }
 
-		//"symbolclass"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.5/@elements.0'
 		public Keyword getSymbolclassKeyword_5_0() { return cSymbolclassKeyword_5_0; }
 
-		//symbolclass=[SymbolClass|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.5/@elements.1'
 		public Assignment getSymbolclassAssignment_5_1() { return cSymbolclassAssignment_5_1; }
 
-		//[SymbolClass|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.5/@elements.1/@terminal'
 		public CrossReference getSymbolclassSymbolClassCrossReference_5_1_0() { return cSymbolclassSymbolClassCrossReference_5_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.5/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolclassSymbolClassQualifiedNameParserRuleCall_5_1_0_1() { return cSymbolclassSymbolClassQualifiedNameParserRuleCall_5_1_0_1; }
 
-		//"symbolrelation" symbolrelation=[SymbolRelation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.6'
 		public Group getGroup_6() { return cGroup_6; }
 
-		//"symbolrelation"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.6/@elements.0'
 		public Keyword getSymbolrelationKeyword_6_0() { return cSymbolrelationKeyword_6_0; }
 
-		//symbolrelation=[SymbolRelation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.6/@elements.1'
 		public Assignment getSymbolrelationAssignment_6_1() { return cSymbolrelationAssignment_6_1; }
 
-		//[SymbolRelation|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.6/@elements.1/@terminal'
 		public CrossReference getSymbolrelationSymbolRelationCrossReference_6_1_0() { return cSymbolrelationSymbolRelationCrossReference_6_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.6/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolrelationSymbolRelationQualifiedNameParserRuleCall_6_1_0_1() { return cSymbolrelationSymbolRelationQualifiedNameParserRuleCall_6_1_0_1; }
 
-		//"symbolstyle" symbolstyle=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.7'
 		public Group getGroup_7() { return cGroup_7; }
 
-		//"symbolstyle"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.7/@elements.0'
 		public Keyword getSymbolstyleKeyword_7_0() { return cSymbolstyleKeyword_7_0; }
 
-		//symbolstyle=[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.7/@elements.1'
 		public Assignment getSymbolstyleAssignment_7_1() { return cSymbolstyleAssignment_7_1; }
 
-		//[SymbolStyle|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.7/@elements.1/@terminal'
 		public CrossReference getSymbolstyleSymbolStyleCrossReference_7_1_0() { return cSymbolstyleSymbolStyleCrossReference_7_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.7/@elements.1/@terminal/@terminal'
 		public RuleCall getSymbolstyleSymbolStyleQualifiedNameParserRuleCall_7_1_0_1() { return cSymbolstyleSymbolStyleQualifiedNameParserRuleCall_7_1_0_1; }
 
-		//"embedded" embeddedcode=[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.8'
 		public Group getGroup_8() { return cGroup_8; }
 
-		//"embedded"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.8/@elements.0'
 		public Keyword getEmbeddedKeyword_8_0() { return cEmbeddedKeyword_8_0; }
 
-		//embeddedcode=[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.8/@elements.1'
 		public Assignment getEmbeddedcodeAssignment_8_1() { return cEmbeddedcodeAssignment_8_1; }
 
-		//[EmbedCode|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.8/@elements.1/@terminal'
 		public CrossReference getEmbeddedcodeEmbedCodeCrossReference_8_1_0() { return cEmbeddedcodeEmbedCodeCrossReference_8_1_0; }
 
-		//QualifiedName
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.8/@elements.1/@terminal/@terminal'
 		public RuleCall getEmbeddedcodeEmbedCodeQualifiedNameParserRuleCall_8_1_0_1() { return cEmbeddedcodeEmbedCodeQualifiedNameParserRuleCall_8_1_0_1; }
 
-		//"modeltype" modeltype=[ModelType|QualifiedName]
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.68/@alternatives/@elements.9'
 		public Group getGroup_9() { return cGroup_9; }
 
 		//"modeltype"
@@ -7859,37 +7684,37 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		//violet
 		public EnumLiteralDeclaration getVioletEnumLiteralDeclaration_135() { return cVioletEnumLiteralDeclaration_135; }
 
-		//"violet"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.135/@literal'
 		public Keyword getVioletVioletKeyword_135_0() { return cVioletVioletKeyword_135_0; }
 
-		//wheat
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.136'
 		public EnumLiteralDeclaration getWheatEnumLiteralDeclaration_136() { return cWheatEnumLiteralDeclaration_136; }
 
-		//"wheat"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.136/@literal'
 		public Keyword getWheatWheatKeyword_136_0() { return cWheatWheatKeyword_136_0; }
 
-		//white
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.137'
 		public EnumLiteralDeclaration getWhiteEnumLiteralDeclaration_137() { return cWhiteEnumLiteralDeclaration_137; }
 
-		//"white"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.137/@literal'
 		public Keyword getWhiteWhiteKeyword_137_0() { return cWhiteWhiteKeyword_137_0; }
 
-		//whitesmoke
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.138'
 		public EnumLiteralDeclaration getWhitesmokeEnumLiteralDeclaration_138() { return cWhitesmokeEnumLiteralDeclaration_138; }
 
-		//"whitesmoke"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.138/@literal'
 		public Keyword getWhitesmokeWhitesmokeKeyword_138_0() { return cWhitesmokeWhitesmokeKeyword_138_0; }
 
-		//yellow
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.139'
 		public EnumLiteralDeclaration getYellowEnumLiteralDeclaration_139() { return cYellowEnumLiteralDeclaration_139; }
 
-		//"yellow"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.139/@literal'
 		public Keyword getYellowYellowKeyword_139_0() { return cYellowYellowKeyword_139_0; }
 
-		//yellowgreen
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.140'
 		public EnumLiteralDeclaration getYellowgreenEnumLiteralDeclaration_140() { return cYellowgreenEnumLiteralDeclaration_140; }
 
-		//"yellowgreen"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.59/@alternatives/@elements.140/@literal'
 		public Keyword getYellowgreenYellowgreenKeyword_140_0() { return cYellowgreenYellowgreenKeyword_140_0; }
 	}
 
@@ -7917,73 +7742,70 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final EnumLiteralDeclaration cDefretryEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
 		private final Keyword cDefretryDefRetryKeyword_9_0 = (Keyword)cDefretryEnumLiteralDeclaration_9.eContents().get(0);
 		
-		//enum ButtonType:
-		//	ok | okcancel="ok-cancel" | yesno="yes-no" | yesnocancel="yes-no-cancel" | retrycancel="retry-cancel" |
-		//	defok="def-ok" | defcancel="def-cancel" | defyes="def-yes" | defno="def-no" | defretry="def-retry";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/ButtonType'
 		public EnumRule getRule() { return rule; }
 
-		//ok | okcancel="ok-cancel" | yesno="yes-no" | yesnocancel="yes-no-cancel" | retrycancel="retry-cancel" | defok="def-ok" |
-		//defcancel="def-cancel" | defyes="def-yes" | defno="def-no" | defretry="def-retry"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//ok
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.0'
 		public EnumLiteralDeclaration getOkEnumLiteralDeclaration_0() { return cOkEnumLiteralDeclaration_0; }
 
-		//"ok"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.0/@literal'
 		public Keyword getOkOkKeyword_0_0() { return cOkOkKeyword_0_0; }
 
-		//okcancel="ok-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.1'
 		public EnumLiteralDeclaration getOkcancelEnumLiteralDeclaration_1() { return cOkcancelEnumLiteralDeclaration_1; }
 
-		//"ok-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.1/@literal'
 		public Keyword getOkcancelOkCancelKeyword_1_0() { return cOkcancelOkCancelKeyword_1_0; }
 
-		//yesno="yes-no"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.2'
 		public EnumLiteralDeclaration getYesnoEnumLiteralDeclaration_2() { return cYesnoEnumLiteralDeclaration_2; }
 
-		//"yes-no"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.2/@literal'
 		public Keyword getYesnoYesNoKeyword_2_0() { return cYesnoYesNoKeyword_2_0; }
 
-		//yesnocancel="yes-no-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.3'
 		public EnumLiteralDeclaration getYesnocancelEnumLiteralDeclaration_3() { return cYesnocancelEnumLiteralDeclaration_3; }
 
-		//"yes-no-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.3/@literal'
 		public Keyword getYesnocancelYesNoCancelKeyword_3_0() { return cYesnocancelYesNoCancelKeyword_3_0; }
 
-		//retrycancel="retry-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.4'
 		public EnumLiteralDeclaration getRetrycancelEnumLiteralDeclaration_4() { return cRetrycancelEnumLiteralDeclaration_4; }
 
-		//"retry-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.4/@literal'
 		public Keyword getRetrycancelRetryCancelKeyword_4_0() { return cRetrycancelRetryCancelKeyword_4_0; }
 
-		//defok="def-ok"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.5'
 		public EnumLiteralDeclaration getDefokEnumLiteralDeclaration_5() { return cDefokEnumLiteralDeclaration_5; }
 
-		//"def-ok"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.5/@literal'
 		public Keyword getDefokDefOkKeyword_5_0() { return cDefokDefOkKeyword_5_0; }
 
-		//defcancel="def-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.6'
 		public EnumLiteralDeclaration getDefcancelEnumLiteralDeclaration_6() { return cDefcancelEnumLiteralDeclaration_6; }
 
-		//"def-cancel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.6/@literal'
 		public Keyword getDefcancelDefCancelKeyword_6_0() { return cDefcancelDefCancelKeyword_6_0; }
 
-		//defyes="def-yes"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.7'
 		public EnumLiteralDeclaration getDefyesEnumLiteralDeclaration_7() { return cDefyesEnumLiteralDeclaration_7; }
 
-		//"def-yes"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.7/@literal'
 		public Keyword getDefyesDefYesKeyword_7_0() { return cDefyesDefYesKeyword_7_0; }
 
-		//defno="def-no"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.8'
 		public EnumLiteralDeclaration getDefnoEnumLiteralDeclaration_8() { return cDefnoEnumLiteralDeclaration_8; }
 
-		//"def-no"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.8/@literal'
 		public Keyword getDefnoDefNoKeyword_8_0() { return cDefnoDefNoKeyword_8_0; }
 
-		//defretry="def-retry"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.9'
 		public EnumLiteralDeclaration getDefretryEnumLiteralDeclaration_9() { return cDefretryEnumLiteralDeclaration_9; }
 
-		//"def-retry"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.106/@alternatives/@elements.9/@literal'
 		public Keyword getDefretryDefRetryKeyword_9_0() { return cDefretryDefRetryKeyword_9_0; }
 	}
 
@@ -7997,29 +7819,28 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final EnumLiteralDeclaration cNameEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
 		private final Keyword cNameNameKeyword_2_0 = (Keyword)cNameEnumLiteralDeclaration_2.eContents().get(0);
 		
-		//enum AttrGetParams:
-		//	type | value | name;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/AttrGetParams'
 		public EnumRule getRule() { return rule; }
 
-		//type | value | name
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//type
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.0'
 		public EnumLiteralDeclaration getTypeEnumLiteralDeclaration_0() { return cTypeEnumLiteralDeclaration_0; }
 
-		//"type"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.0/@literal'
 		public Keyword getTypeTypeKeyword_0_0() { return cTypeTypeKeyword_0_0; }
 
-		//value
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.1'
 		public EnumLiteralDeclaration getValueEnumLiteralDeclaration_1() { return cValueEnumLiteralDeclaration_1; }
 
-		//"value"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.1/@literal'
 		public Keyword getValueValueKeyword_1_0() { return cValueValueKeyword_1_0; }
 
-		//name
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.2'
 		public EnumLiteralDeclaration getNameEnumLiteralDeclaration_2() { return cNameEnumLiteralDeclaration_2; }
 
-		//"name"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.137/@alternatives/@elements.2/@literal'
 		public Keyword getNameNameKeyword_2_0() { return cNameNameKeyword_2_0; }
 	}
 
@@ -8028,14 +7849,13 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final EnumLiteralDeclaration cValueEnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cValueValueKeyword_0 = (Keyword)cValueEnumLiteralDeclaration.eContents().get(0);
 		
-		//enum AttrSetParams:
-		//	value;
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/AttrSetParams'
 		public EnumRule getRule() { return rule; }
 
-		//value
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.139/@alternatives'
 		public EnumLiteralDeclaration getValueEnumLiteralDeclaration() { return cValueEnumLiteralDeclaration; }
 
-		//"value"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.139/@alternatives/@literal'
 		public Keyword getValueValueKeyword_0() { return cValueValueKeyword_0; }
 	}
 
@@ -8087,159 +7907,142 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final EnumLiteralDeclaration cToolinitializedEnumLiteralDeclaration_21 = (EnumLiteralDeclaration)cAlternatives.eContents().get(21);
 		private final Keyword cToolinitializedToolInitializedKeyword_21_0 = (Keyword)cToolinitializedEnumLiteralDeclaration_21.eContents().get(0);
 		
-		//enum EventName:
-		//	beforecreatemodel="BeforeCreateModel" | beforecreaterelationinstance="BeforeCreateRelationInstance" |
-		//	beforedeleteinstance="BeforeDeleteInstance" | beforedeletemodel="BeforeDeleteModel" |
-		//	beforediscardmodel="BeforeDiscardModel" | beforesavemodel="BeforeSaveModel" | createinstance="CreateInstance" |
-		//	createmodel="CreateModel" | createrelationinstance="CreateRelationInstance" | deleteinstance="DeleteInstance" |
-		//	deletemodel="DeleteModel" | deleterelationinstance="DeleteRelationInstance" | discardinstance="DiscardInstance" |
-		//	discardmodel="DiscardModel" | openmodel="OpenModel" | renameinstance="RenameInstance" | savemodel="SaveModel" |
-		//	setattributevalue="SetAttributeValue" | aftercreatemodelingconnector="AfterCreateModelingConnector" |
-		//	aftercreatemodelingnode="AfterCreateModelingNode" | aftereditattributevalue="AfterEditAttributeValue" |
-		//	toolinitialized="ToolInitialized";
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EventName'
 		public EnumRule getRule() { return rule; }
 
-		//beforecreatemodel="BeforeCreateModel" | beforecreaterelationinstance="BeforeCreateRelationInstance" |
-		//beforedeleteinstance="BeforeDeleteInstance" | beforedeletemodel="BeforeDeleteModel" |
-		//beforediscardmodel="BeforeDiscardModel" | beforesavemodel="BeforeSaveModel" | createinstance="CreateInstance" |
-		//createmodel="CreateModel" | createrelationinstance="CreateRelationInstance" | deleteinstance="DeleteInstance" |
-		//deletemodel="DeleteModel" | deleterelationinstance="DeleteRelationInstance" | discardinstance="DiscardInstance" |
-		//discardmodel="DiscardModel" | openmodel="OpenModel" | renameinstance="RenameInstance" | savemodel="SaveModel" |
-		//setattributevalue="SetAttributeValue" | aftercreatemodelingconnector="AfterCreateModelingConnector" |
-		//aftercreatemodelingnode="AfterCreateModelingNode" | aftereditattributevalue="AfterEditAttributeValue" |
-		//toolinitialized="ToolInitialized"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives'
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//beforecreatemodel="BeforeCreateModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.0'
 		public EnumLiteralDeclaration getBeforecreatemodelEnumLiteralDeclaration_0() { return cBeforecreatemodelEnumLiteralDeclaration_0; }
 
-		//"BeforeCreateModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.0/@literal'
 		public Keyword getBeforecreatemodelBeforeCreateModelKeyword_0_0() { return cBeforecreatemodelBeforeCreateModelKeyword_0_0; }
 
-		//beforecreaterelationinstance="BeforeCreateRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.1'
 		public EnumLiteralDeclaration getBeforecreaterelationinstanceEnumLiteralDeclaration_1() { return cBeforecreaterelationinstanceEnumLiteralDeclaration_1; }
 
-		//"BeforeCreateRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.1/@literal'
 		public Keyword getBeforecreaterelationinstanceBeforeCreateRelationInstanceKeyword_1_0() { return cBeforecreaterelationinstanceBeforeCreateRelationInstanceKeyword_1_0; }
 
-		//beforedeleteinstance="BeforeDeleteInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.2'
 		public EnumLiteralDeclaration getBeforedeleteinstanceEnumLiteralDeclaration_2() { return cBeforedeleteinstanceEnumLiteralDeclaration_2; }
 
-		//"BeforeDeleteInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.2/@literal'
 		public Keyword getBeforedeleteinstanceBeforeDeleteInstanceKeyword_2_0() { return cBeforedeleteinstanceBeforeDeleteInstanceKeyword_2_0; }
 
-		//beforedeletemodel="BeforeDeleteModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.3'
 		public EnumLiteralDeclaration getBeforedeletemodelEnumLiteralDeclaration_3() { return cBeforedeletemodelEnumLiteralDeclaration_3; }
 
-		//"BeforeDeleteModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.3/@literal'
 		public Keyword getBeforedeletemodelBeforeDeleteModelKeyword_3_0() { return cBeforedeletemodelBeforeDeleteModelKeyword_3_0; }
 
-		//beforediscardmodel="BeforeDiscardModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.4'
 		public EnumLiteralDeclaration getBeforediscardmodelEnumLiteralDeclaration_4() { return cBeforediscardmodelEnumLiteralDeclaration_4; }
 
-		//"BeforeDiscardModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.4/@literal'
 		public Keyword getBeforediscardmodelBeforeDiscardModelKeyword_4_0() { return cBeforediscardmodelBeforeDiscardModelKeyword_4_0; }
 
-		//beforesavemodel="BeforeSaveModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.5'
 		public EnumLiteralDeclaration getBeforesavemodelEnumLiteralDeclaration_5() { return cBeforesavemodelEnumLiteralDeclaration_5; }
 
-		//"BeforeSaveModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.5/@literal'
 		public Keyword getBeforesavemodelBeforeSaveModelKeyword_5_0() { return cBeforesavemodelBeforeSaveModelKeyword_5_0; }
 
-		//createinstance="CreateInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.6'
 		public EnumLiteralDeclaration getCreateinstanceEnumLiteralDeclaration_6() { return cCreateinstanceEnumLiteralDeclaration_6; }
 
-		//"CreateInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.6/@literal'
 		public Keyword getCreateinstanceCreateInstanceKeyword_6_0() { return cCreateinstanceCreateInstanceKeyword_6_0; }
 
-		//createmodel="CreateModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.7'
 		public EnumLiteralDeclaration getCreatemodelEnumLiteralDeclaration_7() { return cCreatemodelEnumLiteralDeclaration_7; }
 
-		//"CreateModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.7/@literal'
 		public Keyword getCreatemodelCreateModelKeyword_7_0() { return cCreatemodelCreateModelKeyword_7_0; }
 
-		//createrelationinstance="CreateRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.8'
 		public EnumLiteralDeclaration getCreaterelationinstanceEnumLiteralDeclaration_8() { return cCreaterelationinstanceEnumLiteralDeclaration_8; }
 
-		//"CreateRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.8/@literal'
 		public Keyword getCreaterelationinstanceCreateRelationInstanceKeyword_8_0() { return cCreaterelationinstanceCreateRelationInstanceKeyword_8_0; }
 
-		//deleteinstance="DeleteInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.9'
 		public EnumLiteralDeclaration getDeleteinstanceEnumLiteralDeclaration_9() { return cDeleteinstanceEnumLiteralDeclaration_9; }
 
-		//"DeleteInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.9/@literal'
 		public Keyword getDeleteinstanceDeleteInstanceKeyword_9_0() { return cDeleteinstanceDeleteInstanceKeyword_9_0; }
 
-		//deletemodel="DeleteModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.10'
 		public EnumLiteralDeclaration getDeletemodelEnumLiteralDeclaration_10() { return cDeletemodelEnumLiteralDeclaration_10; }
 
-		//"DeleteModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.10/@literal'
 		public Keyword getDeletemodelDeleteModelKeyword_10_0() { return cDeletemodelDeleteModelKeyword_10_0; }
 
-		//deleterelationinstance="DeleteRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.11'
 		public EnumLiteralDeclaration getDeleterelationinstanceEnumLiteralDeclaration_11() { return cDeleterelationinstanceEnumLiteralDeclaration_11; }
 
-		//"DeleteRelationInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.11/@literal'
 		public Keyword getDeleterelationinstanceDeleteRelationInstanceKeyword_11_0() { return cDeleterelationinstanceDeleteRelationInstanceKeyword_11_0; }
 
-		//discardinstance="DiscardInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.12'
 		public EnumLiteralDeclaration getDiscardinstanceEnumLiteralDeclaration_12() { return cDiscardinstanceEnumLiteralDeclaration_12; }
 
-		//"DiscardInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.12/@literal'
 		public Keyword getDiscardinstanceDiscardInstanceKeyword_12_0() { return cDiscardinstanceDiscardInstanceKeyword_12_0; }
 
-		//discardmodel="DiscardModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.13'
 		public EnumLiteralDeclaration getDiscardmodelEnumLiteralDeclaration_13() { return cDiscardmodelEnumLiteralDeclaration_13; }
 
-		//"DiscardModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.13/@literal'
 		public Keyword getDiscardmodelDiscardModelKeyword_13_0() { return cDiscardmodelDiscardModelKeyword_13_0; }
 
-		//openmodel="OpenModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.14'
 		public EnumLiteralDeclaration getOpenmodelEnumLiteralDeclaration_14() { return cOpenmodelEnumLiteralDeclaration_14; }
 
-		//"OpenModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.14/@literal'
 		public Keyword getOpenmodelOpenModelKeyword_14_0() { return cOpenmodelOpenModelKeyword_14_0; }
 
-		//renameinstance="RenameInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.15'
 		public EnumLiteralDeclaration getRenameinstanceEnumLiteralDeclaration_15() { return cRenameinstanceEnumLiteralDeclaration_15; }
 
-		//"RenameInstance"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.15/@literal'
 		public Keyword getRenameinstanceRenameInstanceKeyword_15_0() { return cRenameinstanceRenameInstanceKeyword_15_0; }
 
-		//savemodel="SaveModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.16'
 		public EnumLiteralDeclaration getSavemodelEnumLiteralDeclaration_16() { return cSavemodelEnumLiteralDeclaration_16; }
 
-		//"SaveModel"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.16/@literal'
 		public Keyword getSavemodelSaveModelKeyword_16_0() { return cSavemodelSaveModelKeyword_16_0; }
 
-		//setattributevalue="SetAttributeValue"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.17'
 		public EnumLiteralDeclaration getSetattributevalueEnumLiteralDeclaration_17() { return cSetattributevalueEnumLiteralDeclaration_17; }
 
-		//"SetAttributeValue"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.17/@literal'
 		public Keyword getSetattributevalueSetAttributeValueKeyword_17_0() { return cSetattributevalueSetAttributeValueKeyword_17_0; }
 
-		//aftercreatemodelingconnector="AfterCreateModelingConnector"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.18'
 		public EnumLiteralDeclaration getAftercreatemodelingconnectorEnumLiteralDeclaration_18() { return cAftercreatemodelingconnectorEnumLiteralDeclaration_18; }
 
-		//"AfterCreateModelingConnector"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.18/@literal'
 		public Keyword getAftercreatemodelingconnectorAfterCreateModelingConnectorKeyword_18_0() { return cAftercreatemodelingconnectorAfterCreateModelingConnectorKeyword_18_0; }
 
-		//aftercreatemodelingnode="AfterCreateModelingNode"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.19'
 		public EnumLiteralDeclaration getAftercreatemodelingnodeEnumLiteralDeclaration_19() { return cAftercreatemodelingnodeEnumLiteralDeclaration_19; }
 
-		//"AfterCreateModelingNode"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.19/@literal'
 		public Keyword getAftercreatemodelingnodeAfterCreateModelingNodeKeyword_19_0() { return cAftercreatemodelingnodeAfterCreateModelingNodeKeyword_19_0; }
 
-		//aftereditattributevalue="AfterEditAttributeValue"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.20'
 		public EnumLiteralDeclaration getAftereditattributevalueEnumLiteralDeclaration_20() { return cAftereditattributevalueEnumLiteralDeclaration_20; }
 
-		//"AfterEditAttributeValue"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.20/@literal'
 		public Keyword getAftereditattributevalueAfterEditAttributeValueKeyword_20_0() { return cAftereditattributevalueAfterEditAttributeValueKeyword_20_0; }
 
-		//toolinitialized="ToolInitialized"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.21'
 		public EnumLiteralDeclaration getToolinitializedEnumLiteralDeclaration_21() { return cToolinitializedEnumLiteralDeclaration_21; }
 
-		//"ToolInitialized"
+		//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#/0/@rules.141/@alternatives/@elements.21/@literal'
 		public Keyword getToolinitializedToolInitializedKeyword_21_0() { return cToolinitializedToolInitializedKeyword_21_0; }
 	}
 	
@@ -8426,10 +8229,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//// AST Root
-	//Root:
-	//	methodname=MethodName (includelibrarytype+=IncludeLibraryType | embedplatformtype+=EmbedPlatformType |
-	//	embedcodetype+=EmbedCodeType)* includelibrary+=IncludeLibrary* embedcode+=EmbedCode* method=Method;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Root'
 	public RootElements getRootAccess() {
 		return (pRoot != null) ? pRoot : (pRoot = new RootElements());
 	}
@@ -8438,9 +8238,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getRootAccess().getRule();
 	}
 
-	//// used to generate the ADOxx library name
-	//MethodName:
-	//	"method" name=ValidID;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/MethodName'
 	public MethodNameElements getMethodNameAccess() {
 		return (pMethodName != null) ? pMethodName : (pMethodName = new MethodNameElements());
 	}
@@ -8449,10 +8247,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getMethodNameAccess().getRule();
 	}
 
-	//// standard library defined for specific metamodeling platform, like ADOxx, Eclipse EMP, ...
-	//// eg., include <adoxx:graphrep>
-	//IncludeLibrary:
-	//	"include" "<" name=ValidID (":" includelibrarytype=[IncludeLibraryType|QualifiedName])? ">";
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/IncludeLibrary'
 	public IncludeLibraryElements getIncludeLibraryAccess() {
 		return (pIncludeLibrary != null) ? pIncludeLibrary : (pIncludeLibrary = new IncludeLibraryElements());
 	}
@@ -8461,8 +8256,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getIncludeLibraryAccess().getRule();
 	}
 
-	//IncludeLibraryType:
-	//	"def" "IncludeLibraryType" name=ValidID;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/IncludeLibraryType'
 	public IncludeLibraryTypeElements getIncludeLibraryTypeAccess() {
 		return (pIncludeLibraryType != null) ? pIncludeLibraryType : (pIncludeLibraryType = new IncludeLibraryTypeElements());
 	}
@@ -8471,9 +8265,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getIncludeLibraryTypeAccess().getRule();
 	}
 
-	//EmbedCode:
-	//	"embed" name=ValidID "<" embedplatformtype=[EmbedPlatformType|QualifiedName] (":"
-	//	embedcodetype=[EmbedCodeType|QualifiedName])? ">" "{" embeddedcode=STRING "}";
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EmbedCode'
 	public EmbedCodeElements getEmbedCodeAccess() {
 		return (pEmbedCode != null) ? pEmbedCode : (pEmbedCode = new EmbedCodeElements());
 	}
@@ -8482,8 +8274,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getEmbedCodeAccess().getRule();
 	}
 
-	//EmbedPlatformType:
-	//	"def" "EmbedPlatformType" name=ValidID;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EmbedPlatformType'
 	public EmbedPlatformTypeElements getEmbedPlatformTypeAccess() {
 		return (pEmbedPlatformType != null) ? pEmbedPlatformType : (pEmbedPlatformType = new EmbedPlatformTypeElements());
 	}
@@ -8492,8 +8283,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getEmbedPlatformTypeAccess().getRule();
 	}
 
-	//EmbedCodeType:
-	//	"def" "EmbedCodeType" name=ValidID;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/EmbedCodeType'
 	public EmbedCodeTypeElements getEmbedCodeTypeAccess() {
 		return (pEmbedCodeType != null) ? pEmbedCodeType : (pEmbedCodeType = new EmbedCodeTypeElements());
 	}
@@ -8502,8 +8292,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getEmbedCodeTypeAccess().getRule();
 	}
 
-	//InsertEmbedCode:
-	//	"insert" codesnippetname=[EmbedCode|QualifiedName];
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/InsertEmbedCode'
 	public InsertEmbedCodeElements getInsertEmbedCodeAccess() {
 		return (pInsertEmbedCode != null) ? pInsertEmbedCode : (pInsertEmbedCode = new InsertEmbedCodeElements());
 	}
@@ -8512,13 +8301,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getInsertEmbedCodeAccess().getRule();
 	}
 
-	//// modeling method contains one modeling language aka. metamodel,
-	//// zero or more algorithms,
-	//// zero or more mechanisms,
-	//// zero or more procedures.
-	//Method:
-	//	enumeration+=Enumeration* symbolstyle+=SymbolStyle* symbolclass+=SymbolClass* symbolrelation+=SymbolRelation*
-	//	metamodel=Metamodel algorithm+=Algorithm* event+=Event*;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Method'
 	public MethodElements getMethodAccess() {
 		return (pMethod != null) ? pMethod : (pMethod = new MethodElements());
 	}
@@ -8527,9 +8310,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getMethodAccess().getRule();
 	}
 
-	//// enumerations are defined inside method scope and can be used as an attribute type
-	//Enumeration:
-	//	"enum" name=ValidID "{" enumvalues+=STRING+ "}";
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Enumeration'
 	public EnumerationElements getEnumerationAccess() {
 		return (pEnumeration != null) ? pEnumeration : (pEnumeration = new EnumerationElements());
 	}
@@ -8538,17 +8319,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getEnumerationAccess().getRule();
 	}
 
-	/// *
-	//  ********************************************* 
-	//  * Metamodel Grammar
-	//  *********************************************
-	//  * / // a metamodel is a construct containing:
-	//// 1) at least one class
-	//// 2) zero or more relations
-	//// 3) zero or more attributes
-	//// 4) at least one modeltype
-	//Metamodel:
-	//	class+=Class+ relation+=Relation* attribute+=Attribute* modeltype+=ModelType+;
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Metamodel'
 	public MetamodelElements getMetamodelAccess() {
 		return (pMetamodel != null) ? pMetamodel : (pMetamodel = new MetamodelElements());
 	}
@@ -8557,13 +8328,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getMetamodelAccess().getRule();
 	}
 
-	//// a class is a constructs that:
-	//// 1) can extend other class
-	//// 2) can contain zero or more attributes
-	//Class:
-	//	"class" name=ValidID ("extends" parentclassname=[Class|QualifiedName])? ("symbol"
-	//	symbolclass=[SymbolClass|QualifiedName])? "{" (classattribute+=ClassAttribute | attribute+=Attribute |
-	//	insertembedcode+=InsertEmbedCode | reference+=Reference)* "}";
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Class'
 	public ClassElements getClassAccess() {
 		return (pClass != null) ? pClass : (pClass = new ClassElements());
 	}
@@ -8572,13 +8337,7 @@ public class MMDSLGrammarAccess extends AbstractGrammarElementFinder {
 		return getClassAccess().getRule();
 	}
 
-	//// a relation is a constructs that:
-	//// 1) can extend other relation (only attributes are inherited from the parent relation)
-	//// 2) can contain zero or more attributes
-	//Relation:
-	//	"relation" name=ValidID ("extends" parentrelationname=[Relation|QualifiedName])? ("symbol"
-	//	symbolrelation=[SymbolRelation|QualifiedName])? "from" fromclassname=[Class|QualifiedName] "to"
-	//	toclassname=[Class|QualifiedName] "{" (attribute+=Attribute | insertembedcode+=InsertEmbedCode)* "}";
+	//org.eclipse.xtext.resource.ClasspathUriResolutionException: org.eclipse.xtext.resource.FileNotFoundOnClasspathException: Couldn't find resource on classpath. URI was 'classpath:/org/xtext/nv/dsl/MMDSL.xtext#XtextFragmentProvider_org.xtext.nv.dsl.MMDSL/Relation'
 	public RelationElements getRelationAccess() {
 		return (pRelation != null) ? pRelation : (pRelation = new RelationElements());
 	}

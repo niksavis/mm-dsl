@@ -1,2 +1,2 @@
 # mm-dsl
-The MM-DSL main repository
+The main repository for MM-DSL

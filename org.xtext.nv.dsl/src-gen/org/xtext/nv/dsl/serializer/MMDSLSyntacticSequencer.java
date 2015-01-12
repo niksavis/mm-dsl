@@ -144,7 +144,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	/**
 	 * Syntax:
-	 *     'C' | 'c'
+	 *     'c' | 'C'
 	 */
 	protected void emit_CurveTo_CKeyword_0_0_or_CKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -152,7 +152,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     'a' | 'A'
+	 *     'A' | 'a'
 	 */
 	protected void emit_EllipticalArc_AKeyword_0_0_or_AKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -160,7 +160,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     'H' | 'h'
+	 *     'h' | 'H'
 	 */
 	protected void emit_HorizontalLineTo_HKeyword_0_0_or_HKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -168,7 +168,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     'L' | 'l'
+	 *     'l' | 'L'
 	 */
 	protected void emit_LineTo_LKeyword_0_0_or_LKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -192,7 +192,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     'M' | 'm'
+	 *     'm' | 'M'
 	 */
 	protected void emit_MoveTo_MKeyword_0_0_or_MKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
@@ -232,7 +232,7 @@ public class MMDSLSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     'V' | 'v'
+	 *     'v' | 'V'
 	 */
 	protected void emit_VerticalLineTo_VKeyword_0_0_or_VKeyword_0_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
